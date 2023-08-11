@@ -39,7 +39,7 @@ Publications
   **Shiye Lei**, Fengxiang He, Yancheng Yuan,  and Dacheng Tao \
   *arXiv preprint 2022*
 
-- **Accelerating Temporal Action Proposal Generation via High Performance Computing** [[arXiv](https://arxiv.org/pdf/1906.06496.pdff)] \
+- **Accelerating Temporal Action Proposal Generation via High Performance Computing** [[arXiv](https://arxiv.org/pdf/1906.06496.pdf)] \
   Wang Tian, **Shiye Lei**, Youyou Jiang, Choi Chang, Hichem Snoussi, Guangcun Shan, Yao Fu \
   *Frontiers Computer Science 16(4): 164317 (2022)*
 
