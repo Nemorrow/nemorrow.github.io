@@ -55,7 +55,7 @@ Publications
   *arXiv preprint 2021*
 
 
-Working Experience
+Work Experience
 -----
 
 - **Dec. 2020 - Apr. 2022**, Research Intern@JD Explore Academy, [JD.COM](https://corporate.jd.com/home).
