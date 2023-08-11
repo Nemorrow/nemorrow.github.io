@@ -10,9 +10,6 @@ redirect_from:
 
 I am currently a Ph.D student at [the University of Sydney](https://www.sydney.edu.au/) (USYD), under the supervision of Prof. [Dacheng Tao](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html). Before that, I received B.Eng in Automation from [Beihang University](https://ev.buaa.edu.cn/) and M.Phil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI and knowledge extraction of large scale datasets.
 
-#### Contact
-[leishiye@gmail.com](mailto:leishiye@gmail.com)  
-[slei5230@uni.sydney.edu.au](mailto:slei5230@uni.sydney.edu.au) 
 
 
 Publications
@@ -71,6 +68,11 @@ Professional Activities
 
 - **Journal reviewer**: Machine Learning Journal
 
+
+Contact
+-----
+[leishiye@gmail.com](mailto:leishiye@gmail.com)  
+[slei5230@uni.sydney.edu.au](mailto:slei5230@uni.sydney.edu.au) 
 
 ---
 (Last Update: Aug., 2023)
