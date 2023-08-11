@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,43 +8,70 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+I am currently a Ph.D student at [the University of Sydney](https://www.sydney.edu.au/) (USYD), under the supervision of Prof. [Dacheng Tao](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html). Before that, I received B.Eng in Automation from [Beihang University](https://ev.buaa.edu.cn/) and M.Phil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI and knowledge extraction of large scale datasets.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+#### Contact
+[leishiye@gmail.com](mailto:leishiye@gmail.com)  
+[slei5230@uni.sydney.edu.au](mailto:slei5230@uni.sydney.edu.au) 
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Publications
+-----
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+\* indicate co-first authors
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+### Survey Papers
+- **A Comprehensive Survey of Dataset Distillation** [[arXiv](https://arxiv.org/pdf/2301.05603.pdf)] \
+  **Shiye Lei** and Dacheng Tao \
+  *arXiv preprint 2023*
 
-**Markdown generator**
+### Research Papers
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+- **Image Captions are Natural Prompts for Text-to-Image Models** [[arXiv](https://arxiv.org/pdf/2307.08526.pdf)] \
+  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao and Dacheng Tao \
+  *arXiv preprint 2023*
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+  
+- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued neural Networks** [[arXiv](https://arxiv.org/pdf/2112.03467.pdf)][[Code](https://github.com/LeavesLei/cvnn_generalization)] \
+  Haowen Chen, Fengxiang He, **Shiye Lei** and Dacheng Tao \
+  *Artificial Intelligence 322: 103951 (2023)*
 
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+  
+- **Understanding Deep Learning via Decision Boundary** [[arXiv](https://arxiv.org/pdf/2206.01515.pdf)] \
+  **Shiye Lei**, Fengxiang He, Yancheng Yuan,  and Dacheng Tao \
+  *arXiv preprint 2022*
+
+- **Accelerating Temporal Action Proposal Generation via High Performance Computing** [[arXiv](https://arxiv.org/pdf/1906.06496.pdff)] \
+  Wang Tian, **Shiye Lei**, Youyou Jiang, Choi Chang, Hichem Snoussi, Guangcun Shan, Yao Fu \
+  *Frontiers Computer Science 16(4): 164317 (2022)*
+
+- **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[arXiv](https://arxiv.org/pdf/2112.06281.pdf)] \
+  **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He and Dacheng Tao \
+  *arXiv preprint 2021*
+
+- **Neural networks behave as hash encoders: An empirical study** [[arXiv](https://arxiv.org/pdf/2101.05490.pdf)][[Code](https://github.com/LeavesLei/activation-code)] \
+  Fengxiang He\*, **Shiye Lei\***, Jianmin Ji and Dacheng Tao \
+  *arXiv preprint 2021*
+
+
+Working Experience
+-----
+
+- **Dec. 2020 - Apr. 2022**, Research Intern@JD Explore Academy, [JD.COM](https://corporate.jd.com/home).
+
+- **Feb. 2019 - Jun. 2019**, Research Assistant@[Barcelona Computing Center](https://www.bsc.es/), supervised by [Marc Casas](https://www.bsc.es/casas-marc).
+
+- **Oct. 2018 - Feb. 2019**, Research Intern@[Matrix AI](https://www.matrix.io/), mentored by Youyou Jiang.
+
+
+Professional Activities
+-----
+- **Conference reviewer**: NeurIPS 2023, NeurIPS 2022, ICML 2022, AISTATS 2022, ACML 2021
+
+- **Journal reviewer**: Machine Learning Journal
+
+
+---
+(Last Update: Aug., 2023)
+
