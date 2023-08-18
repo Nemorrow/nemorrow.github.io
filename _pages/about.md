@@ -64,7 +64,7 @@ Work Experience
 
 Professional Activities
 -----
-- **Conference reviewer**: NeurIPS 2023, NeurIPS 2022, ICML 2022, AISTATS 2022, ACML 2021
+- **Conference reviewer**: NeurIPS (2023, 2022), ICML (2022), AISTATS (2024, 2023, 2022), ACML (2022, 2021)
 
 - **Journal reviewer**: Machine Learning Journal
 
