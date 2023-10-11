@@ -30,7 +30,7 @@ Publications
 
 
   
-- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[Code](https://github.com/LeavesLei/cvnn_generalization)] \
+- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
   Haowen Chen, Fengxiang He, **Shiye Lei** and Dacheng Tao \
   *Artificial Intelligence 322: 103951 (2023)*
 
@@ -47,7 +47,7 @@ Publications
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He and Dacheng Tao \
   *arXiv preprint 2021*
 
-- **Neural networks behave as hash encoders: An empirical study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[Code](https://github.com/LeavesLei/activation-code)] \
+- **Neural networks behave as hash encoders: An empirical study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)] \
   Fengxiang He\*, **Shiye Lei\***, Jianmin Ji and Dacheng Tao \
   *arXiv preprint 2021*
 
