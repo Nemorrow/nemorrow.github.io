@@ -24,20 +24,18 @@ Publications
 
 ### Research Papers
 
+- **Understanding Deep Learning via Decision Boundary** [[paper](https://arxiv.org/pdf/2206.01515.pdf)] \
+  **Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao \
+  *IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2023*
+
 - **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao and Dacheng Tao \
   *arXiv preprint 2023*
 
-
-  
 - **Spectral Complexity-scaled Generalisation Bound of Complex-Valued neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
   Haowen Chen, Fengxiang He, **Shiye Lei** and Dacheng Tao \
   *Artificial Intelligence 322: 103951 (2023)*
 
-  
-- **Understanding Deep Learning via Decision Boundary** [[paper](https://arxiv.org/pdf/2206.01515.pdf)] \
-  **Shiye Lei**, Fengxiang He, Yancheng Yuan,  and Dacheng Tao \
-  *arXiv preprint 2022*
 
 - **Accelerating Temporal Action Proposal Generation via High Performance Computing** [[paper](https://doi.org/10.1007/s11704-021-0173-7)] \
   Wang Tian, **Shiye Lei**, Youyou Jiang, Choi Chang, Hichem Snoussi, Guangcun Shan, Yao Fu \
