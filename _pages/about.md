@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Ph.D. student at [the University of Sydney](https://www.sydney.edu.au/) (USYD), under the supervision of Prof. [Dacheng Tao](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html). Before that, I received B.Eng in Automation from [Beihang University](https://ev.buaa.edu.cn/) and M.Phil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI and knowledge extraction of large scale datasets.
+I am currently a Ph.D. student at [the School of Computer Science, The University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. [Dacheng Tao](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html). Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI and knowledge extraction of large scale datasets.
 
 
 
