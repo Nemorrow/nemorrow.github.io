@@ -10,7 +10,7 @@ locale                   : "Sydney, AU"
 title                    : "Shiye Lei (雷诗叶)"
 title_separator          : "-"
 name                     : &name "Shiye"
-description              : &description "Ph.D. student @ USYD"
+description              : &description "PhD student @ USYD"
 url                      : https://nemorrow.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "nemorrow/nemorrow.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Shiye Lei"
   avatar           : "profile2.jpg"
-  bio              : "Ph.D. student @ USYD"
+  bio              : "PhD student @ USYD"
   location         : "Sydney, AU"
   #employer         :
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
