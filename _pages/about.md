@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Ph.D. student at [School of CS, The University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. [Dacheng Tao](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html). Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI and knowledge extraction of large scale datasets.
+I am currently a PhD student at [School of CS, The University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. [Dacheng Tao](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/dacheng-tao.html). Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI and knowledge extraction of large scale datasets.
 
 
 
@@ -62,7 +62,7 @@ Work Experience
 
 Professional Activities
 -----
-- **Conference reviewer**: ICLR (2024), NeurIPS (2022, 2023), ICML (2022), AISTATS (2022-2024), ACML (2021, 2022)
+- **Conference reviewer**: ICLR (24'), NeurIPS (22'/23'), ICML (22'), AISTATS (22'-24'), ACML (21'/22')
 
 - **Journal reviewer**: Machine Learning Journal
 
