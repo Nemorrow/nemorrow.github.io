@@ -32,9 +32,6 @@ Publications
   **Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao \
   *IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2023*
 
-- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
-  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao and Dacheng Tao \
-  *arXiv preprint 2023*
 
 - **Spectral Complexity-scaled Generalisation Bound of Complex-Valued Neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
   Haowen Chen, Fengxiang He, **Shiye Lei** and Dacheng Tao \
@@ -45,6 +42,12 @@ Publications
   Wang Tian, **Shiye Lei**, Youyou Jiang, Choi Chang, Hichem Snoussi, Guangcun Shan, Yao Fu \
   *Frontiers Computer Science, 2022*
 
+### Preprints/Submitted
+
+- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
+  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao and Dacheng Tao \
+  *arXiv preprint 2023*
+  
 - **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[paper](https://arxiv.org/pdf/2112.06281.pdf)] \
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He and Dacheng Tao \
   *arXiv preprint 2021*
@@ -53,7 +56,7 @@ Publications
   Fengxiang He\*, **Shiye Lei\***, Jianmin Ji and Dacheng Tao \
   *arXiv preprint 2021*
 
-
+  
 Work Experience
 -----
 
