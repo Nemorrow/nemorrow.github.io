@@ -24,6 +24,10 @@ Publications
 
 ### Research Papers
 
+- **Understanding Deep Learning via Decision Boundary** [[code](https://github.com/LeavesLei/attentive_learning)] \
+  **Shiye Lei**, Fengxiang He, Haowen Chen, and Dacheng Tao \
+  *IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2023*
+  
 - **Understanding Deep Learning via Decision Boundary** [[paper](https://arxiv.org/pdf/2206.01515.pdf)] \
   **Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao \
   *IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2023*
