@@ -24,7 +24,7 @@ Publications
 
 ### Research Papers
 
-- **Understanding Deep Learning via Decision Boundary** [[code](https://github.com/LeavesLei/attentive_learning)] \
+- **Attentive Learning Facilitates Generalization of Neural Networks** [[code](https://github.com/LeavesLei/attentive_learning)] \
   **Shiye Lei**, Fengxiang He, Haowen Chen, and Dacheng Tao \
   *IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2024*
   
