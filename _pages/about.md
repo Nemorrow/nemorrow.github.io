@@ -20,7 +20,7 @@ Publications
 ### Survey Papers
 - **A Comprehensive Survey of Dataset Distillation** [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)] \
   **Shiye Lei** and Dacheng Tao \
-  *IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2023*
+  *IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024*
 
 ### Research Papers
 
@@ -36,20 +36,20 @@ Publications
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao and Dacheng Tao \
   *arXiv preprint 2023*
 
-- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
+- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued Neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
   Haowen Chen, Fengxiang He, **Shiye Lei** and Dacheng Tao \
-  *Artificial Intelligence 322: 103951 (2023)*
+  *Artificial Intelligence, 2023*
 
 
 - **Accelerating Temporal Action Proposal Generation via High Performance Computing** [[paper](https://doi.org/10.1007/s11704-021-0173-7)] \
   Wang Tian, **Shiye Lei**, Youyou Jiang, Choi Chang, Hichem Snoussi, Guangcun Shan, Yao Fu \
-  *Frontiers Computer Science 16(4): 164317 (2022)*
+  *Frontiers Computer Science, 2022*
 
 - **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[paper](https://arxiv.org/pdf/2112.06281.pdf)] \
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He and Dacheng Tao \
   *arXiv preprint 2021*
 
-- **Neural networks behave as hash encoders: An empirical study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)] \
+- **Neural Networks Behave as Hash Encoders: An Empirical Study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)] \
   Fengxiang He\*, **Shiye Lei\***, Jianmin Ji and Dacheng Tao \
   *arXiv preprint 2021*
 
