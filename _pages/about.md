@@ -42,7 +42,7 @@ Publications
   Wang Tian, **Shiye Lei**, Youyou Jiang, Choi Chang, Hichem Snoussi, Guangcun Shan, Yao Fu \
   *Frontiers Computer Science, 2022*
 
-### Preprints/Submitted
+### Preprints
 
 - **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao and Dacheng Tao \
