@@ -24,7 +24,7 @@ Publications
 
 ### Research Papers
 
-- **Attentive Learning Facilitates Generalization of Neural Networks** [[code](https://github.com/LeavesLei/attentive_learning)] \
+- **Attentive Learning Facilitates Generalization of Neural Networks** [[paper](https://nemorrow.github.io/files/lei2024attentive.pdf)][[code](https://github.com/LeavesLei/attentive_learning)] \
   **Shiye Lei**, Fengxiang He, Haowen Chen, and Dacheng Tao \
   *IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2024*
   
@@ -69,7 +69,7 @@ Work Experience
 
 Professional Activities
 -----
-- **Conference reviewer**: ICLR (24'), NeurIPS (22'/23'), ICML (22'), AISTATS (22'-24'), ACML (21'/22')
+- **Conference reviewer**: ACM MM (24'), ICLR (24'), NeurIPS (22'/23'), ICML (22'), AISTATS (22'-24'), ACML (21'/22')
 
 - **Journal reviewer**: Machine Learning Journal
 
