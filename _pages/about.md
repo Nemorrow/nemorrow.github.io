@@ -34,26 +34,26 @@ Publications
 
 
 - **Spectral Complexity-scaled Generalisation Bound of Complex-Valued Neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
-  Haowen Chen, Fengxiang He, **Shiye Lei** and Dacheng Tao \
+  Haowen Chen, Fengxiang He, **Shiye Lei**, and Dacheng Tao \
   *Artificial Intelligence, 2023*
 
 
 - **Accelerating Temporal Action Proposal Generation via High Performance Computing** [[paper](https://doi.org/10.1007/s11704-021-0173-7)] \
-  Wang Tian, **Shiye Lei**, Youyou Jiang, Choi Chang, Hichem Snoussi, Guangcun Shan, Yao Fu \
+  Wang Tian, **Shiye Lei** et al. \
   *Frontiers Computer Science, 2022*
 
 ### Preprints
 
 - **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
-  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao and Dacheng Tao \
+  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
   *arXiv preprint 2023*
   
 - **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[paper](https://arxiv.org/pdf/2112.06281.pdf)] \
-  **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He and Dacheng Tao \
+  **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao \
   *arXiv preprint 2021*
 
 - **Neural Networks Behave as Hash Encoders: An Empirical Study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)] \
-  Fengxiang He\*, **Shiye Lei\***, Jianmin Ji and Dacheng Tao \
+  Fengxiang He\*, **Shiye Lei\***, Jianmin Ji, and Dacheng Tao \
   *arXiv preprint 2021*
 
   
@@ -69,7 +69,7 @@ Work Experience
 
 Professional Activities
 -----
-- **Conference reviewer**: ACM MM (24'), ICLR (24'), NeurIPS (22'/23'), ICML (22'), AISTATS (22'-24'), ACML (21'/22')
+- **Conference reviewer**: ACM MM (24'), ICLR (24'), NeurIPS (22'-24'), ICML (22'), AISTATS (22'-24'), ACML (21'/22')
 
 - **Journal reviewer**: Machine Learning Journal
 
