@@ -17,8 +17,8 @@
 }
 
 .page {
-   width: 80%; /* Adjust this value as needed */
-  max-width: 1200px; /* Optional: Set a maximum width */
+   width: 100%; /* Adjust this value as needed */
+  max-width: 1900px; /* Optional: Set a maximum width */
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
@@ -26,6 +26,8 @@
   }
 
   .page__inner-wrap {
+     width: 100%; /* Adjust this value as needed */
+  max-width: 1900px; /* Optional: Set a maximum width */
     @include full();
 
     .page__content,
