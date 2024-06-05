@@ -4,6 +4,8 @@
 
 #main {
   @include container;
+   width: 100%; /* Adjust this value as needed */
+  max-width: 1900px; /* Optional: Set a maximum width */
   @include clearfix;
   margin-top: 2em;
   padding-left: 1em;
