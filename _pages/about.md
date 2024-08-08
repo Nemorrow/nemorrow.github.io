@@ -92,7 +92,7 @@ Honors and Awards
 
 Teaching
 -----
-- *2024 S2*, TA of COMP5318 Machine Learning and Data Mining
+- *2024 S2*, Tutor of COMP5318 Machine Learning and Data Mining
 
 Academic Service
 -----
@@ -104,5 +104,5 @@ Academic Service
 Contact
 -----
 [leishiye@gmail.com](mailto:leishiye@gmail.com)  
-[slei5230@uni.sydney.edu.au](mailto:slei5230@uni.sydney.edu.au) 
+[shiye.lei@sydney.edu.au](mailto:shiye.lei@sydney.edu.au) 
 
