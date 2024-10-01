@@ -96,7 +96,7 @@ Teaching
 
 Academic Service
 -----
-- **Conference reviewer**: NeurIPS (22'-24'), ICLR (24'), ICML (22'), ACM MM (24'), AISTATS (22'-24'), ACML (21'/22')
+- **Conference reviewer**: NeurIPS (22'-24'), ICLR (24'/25'), ICML (22'), ACM MM (24'), AISTATS (22'-25')
 
 - **Journal reviewer**: Machine Learning Journal
 
