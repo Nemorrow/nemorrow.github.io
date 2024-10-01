@@ -50,19 +50,19 @@
 
 .page__content {
 
-  h2 {
+  h1, h2, h3 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+   line-height: 1.1;
   }
 
   p, li, dl {
     font-size: 1em;
-    line-height: 1.2;
   }
 
   /* paragraph indents */
   p {
-    margin: 0 0 1.1em;  /* $indent-var */
+    margin: 0 0 $indent-var; 
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
