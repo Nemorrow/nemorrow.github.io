@@ -41,7 +41,7 @@ Selected Publications
   [[paper](https://arxiv.org/pdf/2307.08526.pdf)]
 
 
-
+<!--
 Educations
 -----
 - *2022.10 - Present*, PhD in Computer Science, the University of Sydney
@@ -61,6 +61,7 @@ Internships
 - *2019.02 - 2019.06*, Research Assistant, [Barcelona Computing Center](https://www.bsc.es/)
 
 - *2018.10 - 2019.02*, Research Intern, [Matrix AI](https://www.matrix.io/)
+-->
 
 <!--
 Honors and Awards
