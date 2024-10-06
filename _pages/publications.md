@@ -5,19 +5,16 @@ permalink: /publications/
 author_profile: true
 ---
 
-Publications
------
-
 \* indicates co-first authors
 
-### Survey Papers
+## Survey Papers
 
 - **A Comprehensive Survey of Dataset Distillation** \
   **Shiye Lei** and Dacheng Tao \
   *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**, IF=23.6, CORE rank A\*), 2024* \
   [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)]
 
-### Research Papers
+## Research Papers
 
 - **Offline Behavior Distillation** \
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
@@ -40,7 +37,7 @@ Publications
   [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)]
 
 
-### Preprints
+## Preprints
 
 - **Image Captions are Natural Prompts for Text-to-Image Models** \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
