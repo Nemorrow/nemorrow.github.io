@@ -6,50 +6,46 @@ author_profile: true
 ---
 
 \* indicates co-first authors
-
+  
 ## Survey Papers
 
-- **A Comprehensive Survey of Dataset Distillation** \
+- **A Comprehensive Survey of Dataset Distillation** [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)] \
   **Shiye Lei** and Dacheng Tao \
-  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**, IF=23.6, CORE rank A\*), 2024* \
-  [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)]
+  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2024* 
+  
 
 ## Research Papers
 
-- **Offline Behavior Distillation** \
+- **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)]\
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
-  *Advances on Neural Information Processing (**NeurIPS**, CORE rank A\*), 2024* 
+  *Advances on Neural Information Processing (**NeurIPS**), 2024*
 
-- **Attentive Learning Facilitates Generalization of Neural Networks** \
+- **Attentive Learning Facilitates Generalization of Neural Networks** [[paper](https://doi.org/10.1109/TNNLS.2024.3356310)][[code](https://github.com/LeavesLei/attentive_learning)] \
   **Shiye Lei**, Fengxiang He, Haowen Chen, and Dacheng Tao \
-  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**, IF=14.2, CORE rank A\*), 2024* \
-  [[paper](https://doi.org/10.1109/TNNLS.2024.3356310)][[code](https://github.com/LeavesLei/attentive_learning)]
-
-- **Understanding Deep Learning via Decision Boundary** \
+  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2024* 
+  
+  
+- **Understanding Deep Learning via Decision Boundary** [[paper](https://doi.org/10.1109/TNNLS.2023.3326654)] \
   **Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao \
-  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**, IF=14.2, CORE rank A\*), 2023* \
-  [[paper](https://doi.org/10.1109/TNNLS.2023.3326654)]
+  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2023*
 
 
-- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued Neural Networks** \
+- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued Neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
   Haowen Chen, Fengxiang He, **Shiye Lei**, and Dacheng Tao \
-  *Artificial Intelligence (**AIJ**, IF=14.4, CORE rank A\*), 2023* \
-  [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)]
+  *Artificial Intelligence (**AIJ**, IF=14.4, CORE rank A\*), 2023*
+
 
 
 ## Preprints
 
-- **Image Captions are Natural Prompts for Text-to-Image Models** \
+- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
-  *arXiv preprint 2023* \
-  [[paper](https://arxiv.org/pdf/2307.08526.pdf)]
+  *arXiv preprint 2023*
 
-- **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** \
+- **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[paper](https://arxiv.org/pdf/2112.06281.pdf)] \
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao \
   *arXiv preprint 2021* \
-  [[paper](https://arxiv.org/pdf/2112.06281.pdf)]
 
-- **Neural Networks Behave as Hash Encoders: An Empirical Study** \
+- **Neural Networks Behave as Hash Encoders: An Empirical Study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)]\
   Fengxiang He\*, **Shiye Lei\***, Jianmin Ji, and Dacheng Tao \
-  *arXiv preprint 2021* \
-  [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)]
+  *arXiv preprint 2021* 
