@@ -18,7 +18,7 @@ author_profile: true
 
 - **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)]\
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
-  *Advances on Neural Information Processing Systems (**NeurIPS**), 2024*
+  *Advances in Neural Information Processing Systems (**NeurIPS**), 2024*
 
 - **Attentive Learning Facilitates Generalization of Neural Networks** [[paper](https://doi.org/10.1109/TNNLS.2024.3356310)][[code](https://github.com/LeavesLei/attentive_learning)] \
   **Shiye Lei**, Fengxiang He, Haowen Chen, and Dacheng Tao \
