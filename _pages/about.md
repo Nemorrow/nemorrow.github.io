@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a PhD student at [School of CS, the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. Dacheng Tao. Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI, knowledge extraction of large-scale datasets, and deep learning theory.
+I am currently a PhD student at the [School of CS, the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. Dacheng Tao. Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI, knowledge extraction of large-scale datasets, and deep learning theory.
 
 
 
@@ -16,29 +16,27 @@ Selected Publications
 
 \* indicates co-first authors
 
-- **Offline Behavior Distillation** \
+- **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)]
+\
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
   *Advances on Neural Information Processing (**NeurIPS**), 2024*
 
-- **A Comprehensive Survey of Dataset Distillation** \
+- **A Comprehensive Survey of Dataset Distillation** [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)] \
   **Shiye Lei** and Dacheng Tao \
-  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2024* \
-  [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)]
+  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2024* 
   
-- **Attentive Learning Facilitates Generalization of Neural Networks** \
+- **Attentive Learning Facilitates Generalization of Neural Networks** [[paper](https://doi.org/10.1109/TNNLS.2024.3356310)][[code](https://github.com/LeavesLei/attentive_learning)] \
   **Shiye Lei**, Fengxiang He, Haowen Chen, and Dacheng Tao \
-  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2024* \
-  [[paper](https://doi.org/10.1109/TNNLS.2024.3356310)][[code](https://github.com/LeavesLei/attentive_learning)]
+  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2024* 
   
-- **Understanding Deep Learning via Decision Boundary** \
+  
+- **Understanding Deep Learning via Decision Boundary** [[paper](https://doi.org/10.1109/TNNLS.2023.3326654)] \
   **Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao \
-  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2023* \
-  [[paper](https://doi.org/10.1109/TNNLS.2023.3326654)]
+  *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2023*
 
-- **Image Captions are Natural Prompts for Text-to-Image Models** \
+- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
-  *arXiv preprint 2023* \
-  [[paper](https://arxiv.org/pdf/2307.08526.pdf)]
+  *arXiv preprint 2023*
 
 
 <!--
@@ -74,15 +72,15 @@ Honors and Awards
 - *2017.09*, Excellent Academic Scholarship, Beihang University
 -->
 
-Teaching
+Teaching Assistant
 -----
-- *2024 S2*, Tutor of COMP5318 Machine Learning and Data Mining
+- *2024 S2*, COMP5318 Machine Learning and Data Mining
 
 Academic Service
 -----
 - **Conference reviewer**: NeurIPS (22'-24'), ICLR (24'/25'), ICML (22'), ACM MM (24'), AISTATS (22'-25')
 
-- **Journal reviewer**: Machine Learning Journal, Neural Computing
+- **Journal reviewer**: Machine Learning Journal, Neurocomputing
 
 
 Contact
