@@ -19,7 +19,7 @@ Selected Publications
 - **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)]
 \
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
-  *Advances on Neural Information Processing Systems (**NeurIPS**), 2024*
+  *Advances in Neural Information Processing Systems (**NeurIPS**), 2024*
 
 - **A Comprehensive Survey of Dataset Distillation** [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)] \
   **Shiye Lei** and Dacheng Tao \
