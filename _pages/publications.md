@@ -44,7 +44,7 @@ author_profile: true
 
 - **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[paper](https://arxiv.org/pdf/2112.06281.pdf)] \
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao \
-  *arXiv preprint 2021* \
+  *arXiv preprint 2021* 
 
 - **Neural Networks Behave as Hash Encoders: An Empirical Study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)]\
   Fengxiang He\*, **Shiye Lei\***, Jianmin Ji, and Dacheng Tao \
