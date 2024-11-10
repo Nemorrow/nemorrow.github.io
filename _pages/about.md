@@ -16,7 +16,7 @@ Selected Publications
 
 \* indicates co-first authors
 
-- **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)]
+- **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)][[poster](../images/obd_poster.png)]
 \
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
   *Advances in Neural Information Processing Systems (**NeurIPS**), 2024*
