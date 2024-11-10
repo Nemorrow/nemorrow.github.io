@@ -16,7 +16,7 @@ author_profile: true
 
 ## Research Papers
 
-- **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)]\
+- **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)][[poster](../images/obd_poster.png)]\
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
   *Advances in Neural Information Processing Systems (**NeurIPS**), 2024*
 
@@ -32,7 +32,7 @@ author_profile: true
 
 - **Spectral Complexity-scaled Generalisation Bound of Complex-Valued Neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
   Haowen Chen, Fengxiang He, **Shiye Lei**, and Dacheng Tao \
-  *Artificial Intelligence (**AIJ**, IF=14.4, CORE rank A\*), 2023*
+  *Artificial Intelligence (**AIJ**), 2023*
 
 
 
