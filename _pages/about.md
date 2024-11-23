@@ -80,7 +80,7 @@ Academic Service
 -----
 - **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, MM, *etc.*
 
-- **Journal reviewer**: Machine Learning Journal, Neurocomputing, *etc.*
+- **Journal reviewer**: Machine Learning, Neurocomputing, *etc.*
 
 
 Contact
