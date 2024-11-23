@@ -78,9 +78,9 @@ Teaching Assistant
 
 Academic Service
 -----
-- **Conference reviewer**: NeurIPS (22'-24'), ICLR (24'/25'), ICML (22'), ACM MM (24'), AISTATS (22'-25')
+- **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, MM, *etc.*
 
-- **Journal reviewer**: Machine Learning Journal, Neurocomputing
+- **Journal reviewer**: Machine Learning Journal, Neurocomputing, *etc.*
 
 
 Contact
