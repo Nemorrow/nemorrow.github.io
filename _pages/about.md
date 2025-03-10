@@ -78,7 +78,7 @@ Teaching Assistant
 
 Academic Service
 -----
-- **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, MM, *etc.*
+- **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, MM, *etc.*
 
 - **Journal reviewer**: Machine Learning, Neurocomputing, *etc.*
 
