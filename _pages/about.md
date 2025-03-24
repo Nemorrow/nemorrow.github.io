@@ -16,6 +16,10 @@ Selected Publications
 
 \* indicates co-first authors
 
+- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
+  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
+  *International Journal of Computer Vision (**IJCV**), 2025*
+  
 - **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)][[poster](../images/obd_poster.png)]
 \
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
@@ -33,10 +37,6 @@ Selected Publications
 - **Understanding Deep Learning via Decision Boundary** [[paper](https://doi.org/10.1109/TNNLS.2023.3326654)] \
   **Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao \
   *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2023*
-
-- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
-  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
-  *arXiv preprint 2023*
 
 
 <!--
