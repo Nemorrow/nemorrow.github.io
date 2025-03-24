@@ -16,6 +16,10 @@ author_profile: true
 
 ## Research Papers
 
+- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
+  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
+  *International Journal of Computer Vision (**IJCV**), 2025*
+  
 - **Offline Behavior Distillation**  [[paper](https://arxiv.org/pdf/2410.22728)][[code](https://github.com/LeavesLei/OBD)][[poster](../images/obd_poster.png)]\
   **Shiye Lei**, Sen Zhang, and Dacheng Tao \
   *Advances in Neural Information Processing Systems (**NeurIPS**), 2024*
@@ -38,9 +42,6 @@ author_profile: true
 
 ## Preprints
 
-- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
-  **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
-  *arXiv preprint 2023*
 
 - **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[paper](https://arxiv.org/pdf/2112.06281.pdf)] \
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao \
