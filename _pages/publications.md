@@ -16,7 +16,7 @@ author_profile: true
 
 ## Research Papers
 
-- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)] \
+- **Image Captions are Natural Prompts for Text-to-Image Models** [[paper](https://arxiv.org/pdf/2307.08526.pdf)][[code](https://github.com/LeavesLei/Caption_in_Prompt)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
   *International Journal of Computer Vision (**IJCV**), 2025*
   
