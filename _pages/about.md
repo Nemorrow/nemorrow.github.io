@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a PhD student at the [School of CS, the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. Dacheng Tao. Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include data-centric AI, knowledge extraction of large-scale datasets, and deep learning theory.
+I am a final-year PhD student at the [School of CS, the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. [Dacheng Tao](https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en). Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. My research interests include LLM post-training, data-centric AI, and deep learning theory.
 
 
 
@@ -15,6 +15,11 @@ Selected Publications
 -----
 
 \* indicates co-first authors
+
+- **Revisiting LLM Reasoning via Information Bottleneck** [[paper](https://arxiv.org/pdf/2507.18391)] \
+  **Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao \
+  *arXiv preprint, 2025*
+  
 
 - **Image Captions are Natural Prompts for Training Data Synthesis** [[paper](https://arxiv.org/pdf/2307.08526.pdf)][[code](https://github.com/LeavesLei/Caption_in_Prompt)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
@@ -78,9 +83,9 @@ Teaching Assistant
 
 Academic Service
 -----
-- **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, MM, *etc.*
+- **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, ACM MM, *etc.*
 
-- **Journal reviewer**: Machine Learning, Neurocomputing, *etc.*
+- **Journal reviewer**: Journal of Machine Learning Research, Springer Machine Learning, Neurocomputing, *etc.*
 
 
 Contact
