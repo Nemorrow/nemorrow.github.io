@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "Sydney, AU"
+locale                   : "Beijing, CN"
 title                    : "Shiye Lei (雷诗叶)"
 title_separator          : "-"
 name                     : &name "Shiye"
-description              : &description "PhD student @ USYD"
+description              : &description "PhD student @ USYD \\ Intern @ ByteDance"
 url                      : https://nemorrow.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "nemorrow/nemorrow.github.io"
