@@ -16,6 +16,10 @@ author_profile: true
 
 ## Research Papers
 
+- **Revisiting LLM Reasoning via Information Bottleneck** [[paper](https://arxiv.org/pdf/2507.18391)] \
+  **Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao \
+  *arXiv preprint, 2025*
+  
 - **Image Captions are Natural Prompts for Training Data Synthesis** [[paper](https://arxiv.org/pdf/2307.08526.pdf)][[code](https://github.com/LeavesLei/Caption_in_Prompt)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
   *International Journal of Computer Vision (**IJCV**), 2025*
