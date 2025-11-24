@@ -19,7 +19,10 @@ Selected Publications
 - **Revisiting LLM Reasoning via Information Bottleneck** [[paper](https://arxiv.org/pdf/2507.18391)] \
   **Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao \
   *arXiv preprint, 2025*
-  
+
+- **Offline Behavioral Data Selection** \
+  **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
+  *SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026*
 
 - **Image Captions are Natural Prompts for Training Data Synthesis** [[paper](https://arxiv.org/pdf/2307.08526.pdf)][[code](https://github.com/LeavesLei/Caption_in_Prompt)] \
   **Shiye Lei\***, Hao Chen\*, Sen Zhang, Bo Zhao, and Dacheng Tao \
