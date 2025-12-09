@@ -47,6 +47,10 @@ author_profile: true
 
 ## Preprints
 
+- **State Diversity Matters in Offline Behavior Distillation** [[paper](https://arxiv.org/pdf/2512.06692)] \
+  **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
+  *arXiv preprint, 2025*
+  
 - **Revisiting LLM Reasoning via Information Bottleneck** [[paper](https://arxiv.org/pdf/2507.18391)] \
   **Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao \
   *arXiv preprint, 2025*
