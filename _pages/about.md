@@ -26,7 +26,7 @@ Selected Publications
   *arXiv preprint, 2025*
   
 
-- **Offline Behavioral Data Selection** \
+- **Offline Behavioral Data Selection** [[paper](https://arxiv.org/pdf/2512.18246)][[code](https://github.com/LeavesLei/stepwise_dual_ranking)] \
   **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
   *SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026*
 
