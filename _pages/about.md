@@ -16,14 +16,20 @@ Selected Publications
 
 \* indicates co-first authors
 
-- **State Diversity Matters in Offline Behavior Distillation** [[paper](https://arxiv.org/pdf/2512.06692)] \
+- **A Step Back: Prefix Importance Ratio Stabilizes Policy Optimization** [[paper](https://arxiv.org/pdf/2601.22718)] \
   **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
-  *arXiv preprint, 2025*
+  *arXiv preprint, 2026*
 
 
 - **Revisiting LLM Reasoning via Information Bottleneck** [[paper](https://arxiv.org/pdf/2507.18391)] \
   **Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao \
   *arXiv preprint, 2025*
+  
+  
+- **State Diversity Matters in Offline Behavior Distillation** [[paper](https://arxiv.org/pdf/2512.06692)] \
+  **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
+  *arXiv preprint, 2025*
+
   
 
 - **Offline Behavioral Data Selection** [[paper](https://arxiv.org/pdf/2512.18246)][[code](https://github.com/LeavesLei/stepwise_dual_ranking)] \
