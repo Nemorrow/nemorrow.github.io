@@ -7,10 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a final-year PhD student at the [School of CS, the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of [Prof. Dacheng Tao](https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en). Before that, I received MPhil in Computer Science from USYD in 2022, advised by Prof. Dacheng Tao, and BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) in 2019.
+I am a final-year PhD student in the [School of Computer Science at the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of [Prof. Dacheng Tao](https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en). Prior to this, I received an MPhil in Computer Science from USYD in 2022, also advised by Prof. Dacheng Tao, and a BEng from the [School of Automation Science and Electrical Engineering (SASEE), Beihang University](https://asee.buaa.edu.cn/), in 2019.
 
+I am currently a research intern at [ByteDance BandAI](https://bytedancebandai.notion.site/intro), where my research focuses on LLM post-training, agentic reinforcement learning, and data-centric AI.
 
-I am currently a research intern at [ByteDance BandAI](https://bytedancebandai.notion.site/intro), where my work focuses on LLM post-training, agentic reinforcement learning, and data-centric AI.
 
 Contact
 -----
