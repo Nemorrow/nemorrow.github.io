@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a final-year PhD student at the [School of CS, the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of Prof. [Dacheng Tao](https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en). Before that, I received BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) and MPhil in Computer Science from USYD in 2019 and 2022, respectively. 
+I am a final-year PhD student at the [School of CS, the University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) (USYD), under the supervision of [Prof. Dacheng Tao](https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en). Before that, I received MPhil in Computer Science from USYD in 2022, advised by Prof. Dacheng Tao, and BEng from [SASEE, Beihang University](https://asee.buaa.edu.cn/) in 2019.
+
 
 I am currently a research intern at [ByteDance BandAI](https://bytedancebandai.notion.site/intro), where my work focuses on LLM post-training, agentic reinforcement learning, and data-centric AI.
 
@@ -75,6 +76,10 @@ Selected Publications
 - **Understanding Deep Learning via Decision Boundary** [[paper](https://doi.org/10.1109/TNNLS.2023.3326654)] \
   **Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao \
   *IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**), 2023*
+
+- **Spectral Complexity-scaled Generalisation Bound of Complex-Valued Neural Networks** [[paper](https://doi.org/10.1016/j.artint.2023.103951)][[code](https://github.com/LeavesLei/cvnn_generalization)] \
+  Haowen Chen, Fengxiang He, **Shiye Lei**, and Dacheng Tao \
+  *Artificial Intelligence (**AIJ**), 2023*
 
 - **Spatial-temporal-fusion BNN: Variational Bayesian feature layer** [[paper](https://arxiv.org/pdf/2112.06281)] \
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao \
