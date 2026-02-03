@@ -18,7 +18,7 @@ Contact
 [shiye.lei@sydney.edu.au](mailto:shiye.lei@sydney.edu.au) 
 
 
-Publications [[<small>Google Scholar</small>](https://scholar.google.com/citations?user=k3-RdRgAAAAJ&hl)]
+Publications <span style="font-weight: normal; font-size: 0.8em;">[[Google Scholar](https://scholar.google.com/citations?user=k3-RdRgAAAAJ&hl)]</span>
 -----
 
 \* indicates co-first authors
@@ -85,7 +85,7 @@ Publications [[<small>Google Scholar</small>](https://scholar.google.com/citatio
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao \
   *arXiv preprint, 2021*
 
-- **Neural networks behave as hash encoders: An empirical study** [[paper](https://arxiv.org/pdf/2112.06281)] \
+- **Neural Networks Behave as Hash Encoders: An Empirical Study** [[paper](https://arxiv.org/pdf/2112.06281)] \
   Fengxiang He\*, **Shiye Lei\***, Jianmin Ji, and Dacheng Tao \
   *arXiv preprint, 2021*
 
