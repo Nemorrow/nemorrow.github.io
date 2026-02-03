@@ -11,12 +11,12 @@ author_profile: true
 
 - **A Comprehensive Survey of Dataset Distillation** [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)] \
   **Shiye Lei** and Dacheng Tao \
-  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2024* 
+  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2023* 
   
 
 ## Research Papers
 
-- **Offline Behavioral Data Selection** \
+- **Offline Behavioral Data Selection** [[paper](https://arxiv.org/pdf/2512.18246)] \
   **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
   *SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026*
 
@@ -51,6 +51,10 @@ author_profile: true
   **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
   *arXiv preprint, 2026*
 
+- **EAPO: Enhancing Policy Optimization with On-Demand Expert Assistance** [[paper](https://arxiv.org/pdf/2509.23730)] \
+  Siyao Song, Cong Ma, Zhihao Cheng, **Shiye Lei**, Minghao Li, Ying Zeng, Huaixiao Tou, and Kai Jia \
+  *arXiv preprint, 2025*
+  
 - **Revisiting LLM Reasoning via Information Bottleneck** [[paper](https://arxiv.org/pdf/2507.18391)] \
   **Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao \
   *arXiv preprint, 2025*
@@ -59,11 +63,15 @@ author_profile: true
   **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
   *arXiv preprint, 2025*
 
-
+- **EarthSynth: Generating Informative Earth Observation with Diffusion Models** [[paper](https://arxiv.org/pdf/2505.12108)] \
+  Jiancheng Pan\*, **Shiye Lei\***, Yuqian Fu, Jiahao Li, Yanxing Liu, Yuze Sun, Xiao He, Long Peng, Xiaomeng Huang, and Bo Zhao \
+  *arXiv preprint, 2025*
+  
 - **Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer** [[paper](https://arxiv.org/pdf/2112.06281.pdf)] \
   **Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao \
   *arXiv preprint 2021* 
 
 - **Neural Networks Behave as Hash Encoders: An Empirical Study** [[paper](https://arxiv.org/pdf/2101.05490.pdf)][[code](https://github.com/LeavesLei/activation-code)]\
   Fengxiang He\*, **Shiye Lei\***, Jianmin Ji, and Dacheng Tao \
-  *arXiv preprint 2021* 
+  *arXiv preprint 2021*
+  
