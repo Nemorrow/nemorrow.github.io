@@ -18,7 +18,7 @@ Contact
 [shiye.lei@sydney.edu.au](mailto:shiye.lei@sydney.edu.au) 
 
 
-Selected Publications
+Publications [[<small>Google Scholar</small>](https://scholar.google.com/citations?user=k3-RdRgAAAAJ&hl)]
 -----
 
 \* indicates co-first authors
