@@ -42,7 +42,7 @@ Selected Publications
 
 - **Offline Behavioral Data Selection** [[paper](https://arxiv.org/pdf/2512.18246)][[code](https://github.com/LeavesLei/stepwise_dual_ranking)] \
   **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
-  *SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026*
+  *ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD**), 2026*
 
 
 - **EarthSynth: Generating Informative Earth Observation with Diffusion Models** [[paper](https://arxiv.org/pdf/2505.12108)] \
