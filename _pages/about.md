@@ -65,7 +65,7 @@ Selected Publications
 
 - **A Comprehensive Survey of Dataset Distillation** [[paper](https://doi.org/10.1109/TPAMI.2023.3322540)] \
   **Shiye Lei** and Dacheng Tao \
-  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2024* 
+  *IEEE Transactions on Pattern Analysis and Machine Intelligence (**TPAMI**), 2023* 
 
 ### Trustworthy Deep Learning
 
