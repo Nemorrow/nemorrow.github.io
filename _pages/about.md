@@ -131,7 +131,7 @@ Conference Reviewer
 -----
 - **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, ECCV, AAAI, ACM MM, *etc.*
 
-- **Journal reviewer**: JMLR, Springer Machine Learning, Neurocomputing, *etc.*
+- **Journal reviewer**: TPAMI, JMLR, IJCV, Springer Machine Learning, Neurocomputing, Neural Networks, *etc.*
 
 
 
