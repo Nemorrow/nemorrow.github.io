@@ -400,3 +400,155 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/* Quiet homepage polish
+   ========================================================================== */
+
+body.quiet-home-page {
+  background: #faf7f0;
+  color: #332d27;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  .masthead {
+    display: none;
+  }
+
+  #main {
+    margin-top: 2.35rem;
+  }
+
+  .page__footer {
+    margin-top: 2rem;
+    color: #776c60;
+    background: #faf7f0;
+    border-top-color: #e7dac9;
+
+    footer {
+      margin-top: 1rem;
+      padding-bottom: 1.25rem;
+    }
+
+    .fas,
+    .fab,
+    .far,
+    .fal {
+      color: #9b8f82;
+    }
+  }
+
+  .sidebar {
+    color: #554a41;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    @include breakpoint($large) {
+      padding-left: 0.72rem;
+    }
+  }
+
+  .author__avatar img {
+    max-width: 160px;
+    padding: 0;
+    border: 1px solid #e2d6c6;
+  }
+
+  .author__name {
+    padding-left: 0.35rem;
+    margin-bottom: 0.35rem;
+    color: #2f2923;
+  }
+
+  .author__bio {
+    padding-left: 0.35rem;
+    margin-top: 0.35rem;
+    margin-bottom: 1rem;
+    color: #6c5f54;
+    line-height: 1.35;
+  }
+
+  .author__urls {
+    @include breakpoint($large) {
+      padding-left: 0.35rem;
+    }
+  }
+}
+
+html.quiet-home-page {
+  background: #faf7f0;
+}
+
+.page.quiet-home-page {
+  .page__title {
+    margin-bottom: 0.8rem;
+    color: #2f2923;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: $type-size-3;
+    font-weight: 600;
+  }
+
+  .page__content {
+    color: #3d352e;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.47;
+
+    h1,
+    h2 {
+      margin-top: 1.35rem;
+      padding-bottom: 0.25rem;
+      color: #2f2923;
+      border-bottom-color: #dfd2c1;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin-top: 1.15rem;
+      margin-bottom: 0.45rem;
+      padding-bottom: 0;
+      color: #4c4037;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.05rem;
+      font-weight: 650;
+      border-bottom: 0;
+      line-height: 1.35;
+    }
+
+    p,
+    li {
+      color: #4a4139;
+    }
+
+    p {
+      margin-bottom: 0.68rem;
+    }
+
+    ul {
+      margin-top: 0.35rem;
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin-bottom: 0.38rem;
+      padding-left: 0.15rem;
+
+      &::marker {
+        color: #b96b4b;
+      }
+    }
+
+    a {
+      color: #9b4f35;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(155, 79, 53, 0.25);
+
+      &:hover {
+        color: #703825;
+        border-bottom-color: rgba(112, 56, 37, 0.55);
+        text-decoration: none;
+      }
+    }
+
+    strong {
+      color: #2f2923;
+      font-weight: 700;
+    }
+  }
+}
