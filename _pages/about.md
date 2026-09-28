@@ -21,6 +21,10 @@ Publications <span style="font-weight: normal; font-size: 0.8em;">[[Google Schol
 
 ### Published
 
+- **A Step Back: Prefix Importance Ratio Stabilizes Policy Optimization** [[paper](https://arxiv.org/pdf/2601.22718)] \
+  **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
+  *Advances in Neural Information Processing Systems (**NeurIPS**), 2026*
+  
 - **EAPO: Enhancing Policy Optimization with On-Demand Expert Assistance** [[paper](https://arxiv.org/pdf/2509.23730)] \
   Siyao Song, Cong Ma, Zhihao Cheng, **Shiye Lei**, Minghao Li, Ying Zeng, Huaixiao Tou, and Kai Jia \
   *International Conference on Machine Learning (**ICML**), 2026*
@@ -55,10 +59,6 @@ Publications <span style="font-weight: normal; font-size: 0.8em;">[[Google Schol
   *Artificial Intelligence (**AIJ**), 2023*
 
 ### Preprints
-
-- **A Step Back: Prefix Importance Ratio Stabilizes Policy Optimization** [[paper](https://arxiv.org/pdf/2601.22718)] \
-  **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
-  *arXiv preprint, 2026*
 
 - **Revisiting LLM Reasoning via Information Bottleneck** [[paper](https://arxiv.org/pdf/2507.18391)] \
   **Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao \
