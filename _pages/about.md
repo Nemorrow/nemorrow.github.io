@@ -21,7 +21,7 @@ Publications <span style="font-weight: normal; font-size: 0.8em;">[[Google Schol
 
 ### Published
 
-- **A Step Back: Prefix Importance Ratio Stabilizes Policy Optimization** [[paper](https://arxiv.org/pdf/2601.22718)] \
+- **Stabilizing Off-policy LLM Optimization with Prefix Importance Ratio** [[ArXiv](https://arxiv.org/pdf/2601.22718)] \
   **Shiye Lei**, Zhihao Cheng, and Dacheng Tao \
   *Advances in Neural Information Processing Systems (**NeurIPS**), 2026*
   
