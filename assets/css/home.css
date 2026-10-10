@@ -320,3 +320,7 @@ html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e;
 .quiet-home-page .bibtex-copy { padding:2px 8px; border:1px solid var(--line); border-radius:4px; color:var(--accent); background:var(--paper); cursor:pointer; font:inherit; }
 .page.quiet-home-page .publication-citation pre { margin:10px 0 0; padding:0; background:transparent; border:0; box-shadow:none; white-space:pre-wrap; overflow-wrap:anywhere; font:11px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace; color:var(--text); }
 .page.quiet-home-page .publication-citation code { padding:0; background:transparent; color:inherit; }
+
+/* Tooltip follows its day cell without changing calendar layout. */
+.quiet-home-page .usage-tooltip { position:fixed; z-index:1000; pointer-events:none; max-width:calc(100vw - 16px); box-sizing:border-box; padding:7px 10px; border:1px solid var(--line); border-radius:7px; background:var(--paper); color:var(--ink); box-shadow:0 4px 16px rgb(0 0 0 / .1); font:500 11px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.quiet-home-page .usage-tooltip[hidden] { display:none; }

@@ -17,27 +17,29 @@ Run `python3 scripts/serve_usage.py` from this checkout, or open the supplied
 - To inspect offline, add `--no-sync`; no account request is then made.
 - Upstream data may lag or omit days. Polling does not change that reporting scope.
 
-Production `token_usage.endpoint` is intentionally empty; local preview overrides it
-with `/api/token-usage`. Existing frontend behavior therefore remains valid on GitHub
-Pages, falling back to the bundled snapshot.
+## Independent production storage
 
-## Online automatic updates: a hosting step remains
+Production reads https://shiye-token-usage.upbeatpeach9.chatgpt.site/api/token-usage.
+The browser checks every five minutes while visible and falls back to bundled JSON.
+This public, CORS-enabled endpoint serves only aggregate daily counts. Its independent
+R2 storage can be updated without commits or deployment of this homepage.
+Before the first authenticated upload, it serves the verified initial snapshot.
 
-GitHub Pages is static hosting and cannot run the authenticated updater:
-https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+The Sites MCP plugin exposes `read_token_usage` and owner-only `update_token_usage`.
+Writes require the platform-authenticated owner identity; no account credential is
+stored in this repository or sent to visitors. Uploads validate dates and integers,
+reject older snapshots, and skip unchanged data. Failed updates preserve existing data.
 
-To update the public homepage without pushing the website each time, host only the
-sanitized JSON on an HTTPS endpoint and configure `token_usage.endpoint` to that URL.
-The local updater must then upload that JSON to the chosen storage/API on its own
-schedule. A cross-origin endpoint must allow the homepage origin via CORS. Keep
-publication credentials outside the repository and never expose App Server itself.
-No remote endpoint, upload job, system service, push or deployment has been created.
-That requires choosing the hosting destination and explicitly enabling publication.
+Your dot has verified account usage and login persistence after restarting App Server
+in the same cloud configuration. Persistence across scheduled tasks, the first
+owner-authenticated storage write and a scheduled execution remain to be verified.
+No automatic schedule is enabled by this repository.
 
-Response contract: the existing `assets/data/codex-usage.json` schema, including
-`schemaVersion: 1`, `syncedAt`, and `days: [{date: "YYYY-MM-DD", tokens: integer}]`.
-Numbers remain exact integers in the data; the daily tooltip rounds to one decimal
-million, e.g. `114.4M`. An absent day stays “No record returned”.
+Response contract: `schemaVersion: 1`, UTC `syncedAt`,
+`days: [{date: "YYYY-MM-DD", tokens: integer}]` and optional lifetime summary.
+The service derives coverage and totals. Dates retain the source's unspecified timezone.
+Missing dates display `0.0M` beside the cell without adding synthetic records or
+changing the reported-day denominator of the average.
 
 ## Visitor analytics: prepared, disabled
 

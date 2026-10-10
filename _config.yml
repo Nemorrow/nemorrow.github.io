@@ -316,7 +316,7 @@ compress_html:
 # Optional HTTPS endpoint returning the same schema as assets/data/codex-usage.json.
 # Empty means use the bundled snapshot. Never put an account token here.
 token_usage:
-  endpoint: ""
+  endpoint: "https://shiye-token-usage.upbeatpeach9.chatgpt.site/api/token-usage"
 
 # Optional analytics. Public site ID only; no API keys. Disabled until configured.
 visitor_analytics:

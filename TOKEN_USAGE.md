@@ -44,8 +44,10 @@ comparison. These metrics are not labeled as API billing or all ChatGPT usage.
 
 See [INTEGRATIONS.md](INTEGRATIONS.md) for the endpoint contract, online hosting step,
 and disabled visitor analytics configuration. GitHub Pages cannot itself run the
-local authenticated updater. Production currently uses the bundled snapshot; only
-the local preview configuration opts into the local API.
+local authenticated updater. Production reads the independent HTTPS endpoint configured in `_config.yml`,
+with the bundled snapshot as a fallback. Local preview uses the local API.
+The cloud writer and scheduled-task authentication still require an end-to-end
+verification in Your dot; publishing the endpoint does not enable a schedule.
 
 Run tests with `python3 -m unittest discover -s scripts -p 'test_*.py'`. The Jekyll
 preview has been built with Ruby 3.3 / Jekyll 3.10. Rebuild after source changes; JSON
@@ -56,3 +58,7 @@ The Bio is preserved from the original master revision. Education is maintained 
 navigation bundle is excluded from the homepage because its hidden masthead caused
 recursive navigation errors. Theme selection follows the system initially and saves
 manual choices locally.
+
+## Heatmap display
+
+Unreported dates display 0.0M in the cell tooltip as requested. The stored JSON does not invent zero records, and the average still uses reported days only. Tooltips appear next to the focused, tapped or hovered cell.

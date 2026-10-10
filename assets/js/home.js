@@ -46,6 +46,22 @@
   const section = document.querySelector('[data-usage-url]');
   if (!section) return;
   const detail = document.getElementById('usage-detail');
+  const tip = document.createElement('div');
+  tip.id = 'usage-tooltip'; tip.className = 'usage-tooltip'; tip.hidden = true;
+  tip.setAttribute('role', 'tooltip'); document.body.append(tip);
+  let activeDay = null;
+  const hideTip = () => { tip.hidden = true; if (activeDay) activeDay.removeAttribute('aria-describedby'); activeDay = null; };
+  function showTip(button, message) {
+    if (activeDay && activeDay !== button) activeDay.removeAttribute('aria-describedby');
+    activeDay = button; tip.textContent = message; tip.hidden = false;
+    button.setAttribute('aria-describedby', tip.id);
+    const cell = button.getBoundingClientRect(), box = tip.getBoundingClientRect();
+    tip.style.left = `${Math.max(8, Math.min(innerWidth - box.width - 8, cell.left + cell.width / 2 - box.width / 2))}px`;
+    tip.style.top = `${cell.top >= box.height + 12 ? cell.top - box.height - 8 : cell.bottom + 8}px`;
+  }
+  window.addEventListener('scroll', hideTip, true); window.addEventListener('resize', hideTip);
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') hideTip(); });
+  document.addEventListener('pointerdown', event => { if (!event.target.closest('.usage-day')) hideTip(); });
   const millions = value => `${(value / 1000000).toFixed(1)}M`;
   const compact = new Intl.NumberFormat('en-US', { notation: 'compact', minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const iso = value => value.toISOString().slice(0, 10);
@@ -73,6 +89,7 @@
       item.append(caption, value); stats.append(item);
     });
     stats.hidden = false;
+    hideTip();
     const calendar = document.getElementById('usage-calendar');
     calendar.replaceChildren();
     const months = document.createElement('div'); months.className = 'usage-months';
@@ -92,9 +109,9 @@
       button.className = 'usage-day';
       const level = tokens === undefined ? 'missing' : tokens === 0 ? 'zero' : String(Math.min(4, Math.max(1, Math.ceil(tokens / peak * 4))));
       button.dataset.level = level;
-      const message = `${day} · ${tokens === undefined ? 'No record returned' : millions(tokens)}`;
-      button.title = message; button.setAttribute('aria-label', message);
-      const show = () => { detail.textContent = message; };
+      const message = `${day} · ${millions(tokens ?? 0)}`;
+      button.setAttribute('aria-label', message);
+      const show = () => showTip(button, message);
       button.addEventListener('mouseenter', show); button.addEventListener('focus', show); button.addEventListener('click', show);
       const index = buttons.length;
       button.addEventListener('keydown', event => {
@@ -115,9 +132,9 @@
     months.style.setProperty('--weeks', week); grid.style.setProperty('--weeks', week);
     body.append(weekdays, grid); calendar.append(months, body);
     detail.textContent = '';
-    grid.addEventListener('mouseleave', () => { detail.textContent = ''; });
+    grid.addEventListener('mouseleave', hideTip);
     grid.addEventListener('focusout', event => {
-      if (!grid.contains(event.relatedTarget)) detail.textContent = '';
+      if (!grid.contains(event.relatedTarget)) hideTip();
     });
     section.dataset.state = 'ready';
   }
