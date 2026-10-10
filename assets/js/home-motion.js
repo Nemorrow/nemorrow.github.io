@@ -14,6 +14,8 @@
       '.publications-heading',
       '.publications-group',
       '.publication-item',
+      '.academic-service-heading',
+      '.service-row',
       '.page__content > h2',
       '.page__content > ul'
     ];

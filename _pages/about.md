@@ -52,12 +52,22 @@ Honors and Awards
 - *2017.09*, Excellent Academic Scholarship, Beihang University
 -->
 
-Teaching Assistant
------
-- COMP5318: Machine Learning and Data Mining, 2024 S2 @ USYD
-
-Conference Reviewer
------
-- **Conference reviewer**: ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, ACM MM, *etc.*
-
-- **Journal reviewer**: TPAMI, IJCV, JMLR, *etc.*
+<section class="academic-service" aria-labelledby="academic-service-heading">
+  <h2 class="academic-service-heading" id="academic-service-heading">Academic Service</h2>
+  <div class="service-row">
+    <h3 class="service-label">Teaching</h3>
+    <div class="service-body">
+      <p class="service-course">COMP5318 · Machine Learning and Data Mining</p>
+      <p class="service-detail">Teaching Assistant · University of Sydney · <time datetime="2024">Semester 2, 2024</time></p>
+    </div>
+  </div>
+  <div class="service-row">
+    <h3 class="service-label">Reviewing</h3>
+    <div class="service-body">
+      <dl class="service-review-list">
+        <div><dt>Conferences</dt><dd>ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, ACM MM, <span class="service-more">etc.</span></dd></div>
+        <div><dt>Journals</dt><dd>TPAMI, IJCV, JMLR, <span class="service-more">etc.</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>

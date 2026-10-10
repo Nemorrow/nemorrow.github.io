@@ -337,3 +337,29 @@ html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e;
 .quiet-home-page .theme-sun { display:none; }
 html.quiet-home-page[data-theme="dark"] .theme-sun { display:block; }
 html.quiet-home-page[data-theme="dark"] .theme-moon { display:none; }
+
+/* Academic service follows the same quiet margin as the publication list. */
+.quiet-home-page .academic-service { margin-top:46px; scroll-margin-top:24px; }
+.page.quiet-home-page .page__content .academic-service-heading { margin:0; padding:0 0 17px; border-bottom:1px solid var(--line); }
+.quiet-home-page .service-row { display:grid; grid-template-columns:108px minmax(0,1fr); column-gap:20px; padding:20px 0; border-bottom:1px solid var(--line); }
+.quiet-home-page .service-row:last-child { border-bottom:0; padding-bottom:0; }
+.page.quiet-home-page .page__content .service-label { margin:2px 0 0; color:var(--muted); font:500 10px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:.1em; text-transform:uppercase; text-align:center; }
+.quiet-home-page .service-body { min-width:0; }
+.page.quiet-home-page .page__content .service-course { margin:0 0 5px; color:var(--ink); font:400 17px/1.5 Georgia,"Times New Roman",serif; letter-spacing:-.01em; }
+.page.quiet-home-page .page__content .service-detail { margin:0; color:var(--muted); font:12px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.quiet-home-page .service-detail time { white-space:nowrap; font-variant-numeric:tabular-nums; }
+.quiet-home-page .service-review-list { margin:0; font:13px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.quiet-home-page .service-review-list > div { display:grid; grid-template-columns:80px minmax(0,1fr); column-gap:12px; }
+.quiet-home-page .service-review-list > div + div { margin-top:5px; }
+.quiet-home-page .service-review-list dt { margin:0; color:var(--muted); font:inherit; }
+.quiet-home-page .service-review-list dd { margin:0; color:var(--text); font:inherit; }
+.quiet-home-page .service-more { color:var(--muted); }
+@media(max-width:760px) {
+  .quiet-home-page .academic-service { margin-top:36px; }
+  .quiet-home-page .service-row { grid-template-columns:1fr; row-gap:9px; padding:18px 0; }
+  .page.quiet-home-page .page__content .service-label { margin:0; text-align:left; }
+  .page.quiet-home-page .page__content .service-course { font-size:16px; }
+  .quiet-home-page .service-review-list > div { display:block; }
+  .quiet-home-page .service-review-list > div + div { margin-top:9px; }
+  .quiet-home-page .service-review-list dt { font-size:11px; margin-bottom:2px; }
+}
