@@ -20,7 +20,12 @@ Run `python3 scripts/serve_usage.py` from this checkout, or open the supplied
 ## Independent production storage
 
 Production reads https://shiye-token-usage.upbeatpeach9.chatgpt.site/api/token-usage.
-The browser checks every five minutes while visible and falls back to bundled JSON.
+The browser restores its last valid snapshot from local storage immediately, then
+checks the endpoint in the background and every five minutes while visible. On a
+first visit without cached data, loading remains visible until a response arrives.
+Failed refreshes keep the rendered calendar; the bundled JSON is a fallback when
+no valid data has rendered. Browser storage is optional and contains only the same
+public aggregate snapshot.
 This public, CORS-enabled endpoint serves only aggregate daily counts. Its independent
 R2 storage can be updated without commits or deployment of this homepage.
 Before the first authenticated upload, it serves the verified initial snapshot.

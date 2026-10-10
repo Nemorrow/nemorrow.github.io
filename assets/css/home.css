@@ -324,3 +324,8 @@ html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e;
 /* Tooltip follows its day cell without changing calendar layout. */
 .quiet-home-page .usage-tooltip { position:fixed; z-index:1000; pointer-events:none; max-width:calc(100vw - 16px); box-sizing:border-box; padding:7px 10px; border:1px solid var(--line); border-radius:7px; background:var(--paper); color:var(--ink); box-shadow:0 4px 16px rgb(0 0 0 / .1); font:500 11px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .quiet-home-page .usage-tooltip[hidden] { display:none; }
+
+.quiet-home-page .theme-toggle { width:36px; height:36px; justify-content:center; }
+.quiet-home-page .theme-sun { display:none; }
+html.quiet-home-page[data-theme="dark"] .theme-sun { display:block; }
+html.quiet-home-page[data-theme="dark"] .theme-moon { display:none; }

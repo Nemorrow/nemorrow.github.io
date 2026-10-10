@@ -9,7 +9,6 @@
     root.dataset.theme = theme;
     toggle.setAttribute('aria-pressed', String(theme === 'dark'));
     toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
-    toggle.querySelector('span').textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
   }
   if (toggle) {
     applyTheme(root.dataset.theme || (preference.matches ? 'dark' : 'light'));
@@ -140,10 +139,17 @@
     section.dataset.state = 'ready';
   }
   let signature = '';
+  const cacheKey = `homepage-usage-v1:${section.dataset.usageEndpoint || section.dataset.usageUrl}`;
+  try {
+    const cached = JSON.parse(localStorage.getItem(cacheKey));
+    if (cached) { render(cached); signature = JSON.stringify(cached.days); section.dataset.source = 'cache'; }
+  } catch (_) { /* Storage may be unavailable or contain an invalid old snapshot. */ }
+
   async function loadUsage() {
     const endpoint = section.dataset.usageEndpoint;
     const urls = [...new Set([endpoint, section.dataset.usageUrl].filter(Boolean))];
     for (const url of urls) {
+      if (url !== endpoint && section.dataset.state === 'ready') return;
       try {
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), 8000);
@@ -155,6 +161,7 @@
         } finally { clearTimeout(timer); }
         const nextSignature = JSON.stringify(data.days);
         if (nextSignature !== signature) { render(data); signature = nextSignature; }
+        try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch (_) {}
         section.dataset.source = endpoint && url === endpoint ? 'endpoint' : 'snapshot';
         return;
       } catch (_) { /* Try the saved snapshot; preserve a rendered calendar on failure. */ }
