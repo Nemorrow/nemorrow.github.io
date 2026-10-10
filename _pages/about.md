@@ -57,15 +57,14 @@ Honors and Awards
   <div class="service-grid">
     <div class="service-group">
       <h3 class="service-subheading">Teaching</h3>
-      <p class="service-caption">Teaching Assistant</p>
-      <p class="service-main">Machine Learning and Data Mining</p>
-      <p class="service-meta">COMP5318 · University of Sydney<br><time datetime="2024">Semester 2, 2024</time></p>
+      <p class="service-main">COMP5318: Machine Learning and Data Mining</p>
+      <p class="service-meta">Teaching Assistant · University of Sydney · <time datetime="2024">Semester 2, 2024</time></p>
     </div>
     <div class="service-group">
       <h3 class="service-subheading">Reviewing</h3>
       <dl class="service-review-list">
-        <dt>Conferences</dt><dd>ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, ACM MM, <span class="service-more">etc.</span></dd>
-        <dt>Journals</dt><dd>TPAMI, IJCV, JMLR, <span class="service-more">etc.</span></dd>
+        <div><dt>Conferences</dt><dd>ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, ACM MM, <span class="service-more">etc.</span></dd></div>
+        <div><dt>Journals</dt><dd>TPAMI, IJCV, JMLR, <span class="service-more">etc.</span></dd></div>
       </dl>
     </div>
   </div>

@@ -6,12 +6,12 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "Sydney, AU"
+locale                   : "en_AU"
 title                    : "Shiye Lei (雷诗叶)"
 title_separator          : "-"
 name                     : &name "Shiye"
-description              : &description "PhD student @ USYD"
-url                      : https://nemorrow.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "LLM researcher @ ByteDance"
+url                      : https://shiyelei.com
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "nemorrow/nemorrow.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

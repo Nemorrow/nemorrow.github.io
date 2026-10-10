@@ -144,6 +144,7 @@
     section.dataset.state = 'ready';
   }
   let signature = '';
+  let displayedSyncedAt = 0;
   const cacheKey = `homepage-usage-v1:${section.dataset.usageEndpoint || section.dataset.usageUrl}`;
   const initialSnapshots = [];
   try {
@@ -159,6 +160,7 @@
     try {
       render(snapshot.data);
       signature = JSON.stringify(snapshot.data.days);
+      displayedSyncedAt = Date.parse(snapshot.data.syncedAt) || 0;
       section.dataset.source = snapshot.source;
       break;
     } catch (_) { /* Try the other snapshot if this one is invalid. */ }
@@ -178,8 +180,12 @@
           if (!response.ok) throw Error('Usage unavailable');
           data = await response.json();
         } finally { clearTimeout(timer); }
+        const nextSyncedAt = Date.parse(data.syncedAt) || 0;
+        // A stale deployment or slower request must not replace newer data.
+        if (nextSyncedAt < displayedSyncedAt) return;
         const nextSignature = JSON.stringify(data.days);
         if (nextSignature !== signature) { render(data); signature = nextSignature; }
+        displayedSyncedAt = nextSyncedAt;
         try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch (_) {}
         section.dataset.source = endpoint && url === endpoint ? 'endpoint' : 'snapshot';
         return;
