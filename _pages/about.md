@@ -53,11 +53,11 @@ Honors and Awards
 -->
 
 <section class="academic-service" aria-labelledby="academic-service-heading">
-  <h2 class="academic-service-heading" id="academic-service-heading">Academic Service</h2>
+  <h2 class="academic-service-heading" id="academic-service-heading">Services</h2>
   <div class="service-grid">
     <div class="service-group">
-      <h3 class="service-subheading">Conf Reviewer</h3>
-      <p class="service-main">ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, ACM MM, <span class="service-more">etc.</span></p>
+      <h3 class="service-subheading">Conference Reviewer</h3>
+      <p class="service-main">ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, <span class="service-venue">ACM MM</span>, <span class="service-more">etc.</span></p>
     </div>
     <div class="service-group">
       <h3 class="service-subheading">Journal Reviewer</h3>
