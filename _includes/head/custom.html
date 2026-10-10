@@ -46,8 +46,8 @@
   document.documentElement.dataset.theme = theme;
 })();
 </script>
-<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
-<script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<script src="{{ '/assets/js/home.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {% endif %}
 
 {% if site.visitor_analytics.enabled and site.visitor_analytics.script_url != '' and site.visitor_analytics.website_id != '' and jekyll.environment == 'production' %}
