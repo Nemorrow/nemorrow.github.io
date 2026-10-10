@@ -43,7 +43,7 @@ body.quiet-home-page .sidebar > [itemscope] {
   .quiet-home-page .publications-group,
   .quiet-home-page .publication-item,
   .quiet-home-page .academic-service-heading,
-  .quiet-home-page .service-row {
+  .quiet-home-page .service-group {
     animation: home-section-reveal 640ms cubic-bezier(.18, .72, .25, 1)
       var(--home-reveal-delay, 0ms) both;
   }

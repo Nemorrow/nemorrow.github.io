@@ -33,7 +33,7 @@ body.quiet-home-page .author__urls { display:block; position:static; width:auto;
 body.quiet-home-page .author__urls::before,body.quiet-home-page .author__urls::after { display:none; }
 body.quiet-home-page .author__urls li { font-size:13px; margin-bottom:7px; color:var(--muted); }
 body.quiet-home-page .author__urls a,body.quiet-home-page .social-icons i { color:var(--muted); }
-body.quiet-home-page .page { width:100%; float:none; padding:0; min-width:0; }
+body.quiet-home-page .page { display:flow-root; width:100%; float:none; padding:0; min-width:0; }
 .page.quiet-home-page .page__title { font:500 40px/1.1 Georgia,serif; letter-spacing:-.04em; color:var(--ink); margin:0 0 25px; }
 .page.quiet-home-page .page__content { color:var(--text); font:16px/1.75 Georgia,"Times New Roman",serif; }
 .page.quiet-home-page .page__content p,.page.quiet-home-page .page__content li { color:var(--text); }
@@ -281,11 +281,11 @@ body.quiet-home-page .author__bio { white-space:normal; font-family:-apple-syste
 /* Publication index: venue and year form a quiet margin beside each paper. */
 .page.quiet-home-page .publications-heading { display:flex; align-items:baseline; justify-content:space-between; gap:20px; border-bottom:1px solid var(--line); margin-top:55px; padding-bottom:17px; }
 .page.quiet-home-page .publications-heading h2 { margin:0; padding:0; border:0; }
-.page.quiet-home-page .publications-note { margin:0; color:var(--muted); font:11px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-.page.quiet-home-page .publications-group { margin:28px 0 6px; font-size:10px; letter-spacing:.12em; }
-.page.quiet-home-page .publication-list { list-style:none; padding:0; margin:0; }
-.page.quiet-home-page .publication-item { display:grid; grid-template-columns:108px minmax(0,1fr); align-items:start; column-gap:20px; row-gap:0; padding:19px 0; margin:0; border-bottom:1px solid var(--line); }
-.page.quiet-home-page .publication-item:last-child { border-bottom:0; }
+.page.quiet-home-page .page__content .publications-note { margin:0; color:var(--muted); font:11px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.page.quiet-home-page .page__content .publications-group { margin:28px 0 6px; font-size:10px; letter-spacing:.12em; }
+.page.quiet-home-page .page__content .publication-list { list-style:none; padding:0; margin:0; }
+.page.quiet-home-page .page__content .publication-item { display:grid; grid-template-columns:108px minmax(0,1fr); align-items:start; column-gap:20px; row-gap:0; padding:19px 0; margin:0; border-bottom:1px solid var(--line); }
+.page.quiet-home-page .page__content .publication-item:last-child { border-bottom:0; }
 .quiet-home-page .publication-meta { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; align-self:start; gap:8px; padding:2px 0 0; font:11px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
 .quiet-home-page .publication-badge { display:inline-block; white-space:nowrap; padding:3px 8px; border-radius:4px; background:#e8eee5; color:#46624d; font-weight:600; letter-spacing:.025em; }
 html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e; color:#bdd0b2; }
@@ -302,8 +302,8 @@ html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e;
 .page.quiet-home-page .publication-links a:hover,.page.quiet-home-page .publication-links button:hover { color:var(--ink); background:var(--surface); border-color:var(--accent); text-decoration:none; }
 @media(max-width:760px) {
   .page.quiet-home-page .publications-heading { margin-top:42px; gap:12px; }
-  .page.quiet-home-page .publications-note { font-size:10px; }
-  .page.quiet-home-page .publication-item { grid-template-columns:1fr; align-items:start; gap:10px; padding:18px 0; }
+  .page.quiet-home-page .page__content .publications-note { font-size:10px; }
+  .page.quiet-home-page .page__content .publication-item { grid-template-columns:1fr; align-items:start; gap:10px; padding:18px 0; }
   .quiet-home-page .publication-meta { flex-direction:row; align-items:center; justify-content:flex-start; gap:10px; padding:0; }
   .page.quiet-home-page .publication-title { font-size:17px; }
 }
@@ -338,28 +338,22 @@ html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e;
 html.quiet-home-page[data-theme="dark"] .theme-sun { display:block; }
 html.quiet-home-page[data-theme="dark"] .theme-moon { display:none; }
 
-/* Academic service follows the same quiet margin as the publication list. */
-.quiet-home-page .academic-service { margin-top:46px; scroll-margin-top:24px; }
-.page.quiet-home-page .page__content .academic-service-heading { margin:0; padding:0 0 17px; border-bottom:1px solid var(--line); }
-.quiet-home-page .service-row { display:grid; grid-template-columns:108px minmax(0,1fr); column-gap:20px; padding:20px 0; border-bottom:1px solid var(--line); }
-.quiet-home-page .service-row:last-child { border-bottom:0; padding-bottom:0; }
-.page.quiet-home-page .page__content .service-label { margin:2px 0 0; color:var(--muted); font:500 10px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:.1em; text-transform:uppercase; text-align:center; }
-.quiet-home-page .service-body { min-width:0; }
-.page.quiet-home-page .page__content .service-course { margin:0 0 5px; color:var(--ink); font:400 17px/1.5 Georgia,"Times New Roman",serif; letter-spacing:-.01em; }
-.page.quiet-home-page .page__content .service-detail { margin:0; color:var(--muted); font:12px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-.quiet-home-page .service-detail time { white-space:nowrap; font-variant-numeric:tabular-nums; }
-.quiet-home-page .service-review-list { margin:0; font:13px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-.quiet-home-page .service-review-list > div { display:grid; grid-template-columns:80px minmax(0,1fr); column-gap:12px; }
-.quiet-home-page .service-review-list > div + div { margin-top:5px; }
-.quiet-home-page .service-review-list dt { margin:0; color:var(--muted); font:inherit; }
-.quiet-home-page .service-review-list dd { margin:0; color:var(--text); font:inherit; }
+/* Two quiet columns, with shared type and spacing for academic service. */
+.quiet-home-page .academic-service { margin-top:42px; scroll-margin-top:24px; }
+.page.quiet-home-page .page__content .academic-service-heading { margin:0; padding:0 0 16px; border-bottom:1px solid var(--line); }
+.quiet-home-page .service-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:36px; padding-top:22px; }
+.quiet-home-page .service-group { min-width:0; }
+.page.quiet-home-page .page__content .service-subheading { margin:0 0 14px; color:var(--ink); font:400 18px/1.4 Georgia,"Times New Roman",serif; letter-spacing:-.015em; text-transform:none; }
+.page.quiet-home-page .page__content .service-caption,
+.quiet-home-page .service-review-list dt { margin:0 0 6px; color:var(--muted); font:13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.page.quiet-home-page .page__content .service-main,
+.quiet-home-page .service-review-list dd { margin:0; color:var(--text); font:400 16px/1.65 Georgia,"Times New Roman",serif; }
+.page.quiet-home-page .page__content .service-meta { margin:9px 0 0; color:var(--muted); font:13px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.quiet-home-page .service-meta time { white-space:nowrap; font-variant-numeric:tabular-nums; }
+.quiet-home-page .service-review-list { margin:0; }
+.quiet-home-page .service-review-list dd + dt { margin-top:14px; }
 .quiet-home-page .service-more { color:var(--muted); }
 @media(max-width:760px) {
-  .quiet-home-page .academic-service { margin-top:36px; }
-  .quiet-home-page .service-row { grid-template-columns:1fr; row-gap:9px; padding:18px 0; }
-  .page.quiet-home-page .page__content .service-label { margin:0; text-align:left; }
-  .page.quiet-home-page .page__content .service-course { font-size:16px; }
-  .quiet-home-page .service-review-list > div { display:block; }
-  .quiet-home-page .service-review-list > div + div { margin-top:9px; }
-  .quiet-home-page .service-review-list dt { font-size:11px; margin-bottom:2px; }
+  .quiet-home-page .academic-service { margin-top:34px; }
+  .quiet-home-page .service-grid { grid-template-columns:1fr; gap:26px; padding-top:20px; }
 }

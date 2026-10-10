@@ -54,19 +54,18 @@ Honors and Awards
 
 <section class="academic-service" aria-labelledby="academic-service-heading">
   <h2 class="academic-service-heading" id="academic-service-heading">Academic Service</h2>
-  <div class="service-row">
-    <h3 class="service-label">Teaching</h3>
-    <div class="service-body">
-      <p class="service-course">COMP5318 · Machine Learning and Data Mining</p>
-      <p class="service-detail">Teaching Assistant · University of Sydney · <time datetime="2024">Semester 2, 2024</time></p>
+  <div class="service-grid">
+    <div class="service-group">
+      <h3 class="service-subheading">Teaching</h3>
+      <p class="service-caption">Teaching Assistant</p>
+      <p class="service-main">Machine Learning and Data Mining</p>
+      <p class="service-meta">COMP5318 · University of Sydney<br><time datetime="2024">Semester 2, 2024</time></p>
     </div>
-  </div>
-  <div class="service-row">
-    <h3 class="service-label">Reviewing</h3>
-    <div class="service-body">
+    <div class="service-group">
+      <h3 class="service-subheading">Reviewing</h3>
       <dl class="service-review-list">
-        <div><dt>Conferences</dt><dd>ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, ACM MM, <span class="service-more">etc.</span></dd></div>
-        <div><dt>Journals</dt><dd>TPAMI, IJCV, JMLR, <span class="service-more">etc.</span></dd></div>
+        <dt>Conferences</dt><dd>ICML, NeurIPS, ICLR, AISTATS, CVPR, ICCV, AAAI, ACM MM, <span class="service-more">etc.</span></dd>
+        <dt>Journals</dt><dd>TPAMI, IJCV, JMLR, <span class="service-more">etc.</span></dd>
       </dl>
     </div>
   </div>

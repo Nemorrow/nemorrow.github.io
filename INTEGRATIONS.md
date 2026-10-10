@@ -3,7 +3,7 @@
 ## Usage: repository snapshots
 
 The homepage uses repository JSON and an embedded build-time snapshot. A local
-macOS task updates both at 00:05, 06:00 and 18:00 Asia/Shanghai, with login catch-up
+macOS task updates both at 00:05 and 12:00 Asia/Shanghai, with login catch-up
 and retries. Unchanged data does not produce a commit. `_config.yml` leaves
 `token_usage.endpoint` empty. Independent storage and dot are no longer used.
 

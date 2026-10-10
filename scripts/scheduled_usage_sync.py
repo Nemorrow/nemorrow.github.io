@@ -11,7 +11,7 @@ from zoneinfo import ZoneInfo
 from sync_codex_usage import find_codex, read_account_usage, normalize, atomic_write
 
 ZONE = ZoneInfo('Asia/Shanghai')
-SLOTS = ((0, 5), (6, 0), (18, 0))
+SLOTS = ((0, 5), (12, 0))
 FILES = ('assets/data/codex-usage.json', '_data/token_usage_snapshot.json')
 REPO_URL = 'https://github.com/Nemorrow/nemorrow.github.io.git'
 

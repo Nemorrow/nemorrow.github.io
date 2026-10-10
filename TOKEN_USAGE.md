@@ -9,7 +9,7 @@ and every five minutes while visible. No independent storage or dot task is need
 
 `scripts/scheduled_usage_sync.py --state-dir /ABSOLUTE/PRIVATE/STATE/DIRECTORY`
 
-Run through a macOS LaunchAgent at 00:05, 06:00 and 18:00 (Asia/Shanghai).
+Run through a macOS LaunchAgent at 00:05 and 12:00 (Asia/Shanghai).
 RunAtLoad catches up after login; a 30-minute retry checks for missed/failed slots.
 A successful slot is skipped on subsequent checks. After shutdown, it exports the
 latest complete available history once instead of generating a commit per missed slot.
