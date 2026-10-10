@@ -259,7 +259,7 @@ body.quiet-home-page .education-degree h3 { font-weight:500; }
   line-height:0;
   text-decoration:none;
 }
-.quiet-home-page .home-name-calligraphy { display:block; width:94px; height:auto; }
+.quiet-home-page .home-name-calligraphy { display:block; width:84px; height:auto; }
 body.quiet-home-page #main { margin-top:34px; }
 body.quiet-home-page .author__avatar { text-align:center; }
 body.quiet-home-page .author__content { text-align:center; }
@@ -270,7 +270,7 @@ body.quiet-home-page .author__bio { white-space:normal; font-family:-apple-syste
 .quiet-home-page .profile-link > svg { width:17px; height:17px; }
 @media (max-width:760px) {
   .quiet-home-page .home-toolbar { padding-top:10px; min-height:40px; }
-  .quiet-home-page .home-name-calligraphy { width:88px; }
+  .quiet-home-page .home-name-calligraphy { width:80px; }
   body.quiet-home-page #main { margin-top:20px; }
   body.quiet-home-page .sidebar > div { display:flex; flex-direction:column; align-items:stretch; gap:0; }
   body.quiet-home-page .author__avatar img { max-width:110px; }
