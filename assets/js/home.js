@@ -163,7 +163,7 @@
     const endpoint = section.dataset.usageEndpoint;
     const urls = [...new Set([endpoint, section.dataset.usageUrl].filter(Boolean))];
     for (const url of urls) {
-      if (url !== endpoint && section.dataset.state === 'ready') return;
+      if (endpoint && url !== endpoint && section.dataset.state === 'ready') return;
       try {
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), 8000);

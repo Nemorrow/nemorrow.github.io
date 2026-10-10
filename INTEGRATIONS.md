@@ -1,56 +1,13 @@
-# Live usage and visitor analytics
+# Usage and visitor analytics
 
-## Local live usage: implemented
+## Usage: repository snapshots
 
-Run `python3 scripts/serve_usage.py` from this checkout, or open the supplied
-`Preview.command`. Python 3 is sufficient. The service binds only to 127.0.0.1:4173.
+The homepage uses repository JSON and an embedded build-time snapshot. A local
+macOS task updates both at 00:05, 06:00 and 18:00 Asia/Shanghai, with login catch-up
+and retries. Unchanged data does not produce a commit. `_config.yml` leaves
+`token_usage.endpoint` empty. Independent storage and dot are no longer used.
 
-- `GET /api/token-usage` returns the sanitized snapshot with `Cache-Control: no-store`.
-- A background worker refreshes it through the authenticated local App Server at
-  startup and every hour while the service is running. `--refresh-seconds` can change
-  this interval (minimum 300). This is not a persistent system task.
-- The browser requests fresh data every five minutes while its tab is visible.
-- API failure falls back to the saved JSON. Refresh failure keeps the last valid
-  snapshot; the `syncedAt` field describes actual snapshot freshness.
-- No account credentials, thread data or authentication files are served. Only the
-  built `_site` directory and the aggregate API are reachable.
-- To inspect offline, add `--no-sync`; no account request is then made.
-- Upstream data may lag or omit days. Polling does not change that reporting scope.
-
-## Independent production storage
-
-Production reads https://shiye-token-usage.upbeatpeach9.chatgpt.site/api/token-usage.
-Jekyll embeds `_data/token_usage_snapshot.json` into the page so first-time visitors
-can render the calendar without a data request. The browser picks the newer valid
-snapshot between this embedded data and its local cache, then refreshes from the
-endpoint in the background and every five minutes while visible. Failed refreshes
-preserve the visible calendar. Browser storage is optional and contains only public
-aggregate data. The standalone JSON remains a fallback if neither initial snapshot
-is usable.
-
-Update the embedded snapshot alongside normal website releases when desired; it
-does not require scheduled commits. Runtime usage updates still go only to the
-independent service.
-
-This public, CORS-enabled endpoint serves only aggregate daily counts. Its independent
-R2 storage can be updated without commits or deployment of this homepage.
-Before the first authenticated upload, it serves the verified initial snapshot.
-
-The Sites MCP plugin exposes `read_token_usage` and owner-only `update_token_usage`.
-Writes require the platform-authenticated owner identity; no account credential is
-stored in this repository or sent to visitors. Uploads validate dates and integers,
-reject older snapshots, and skip unchanged data. Failed updates preserve existing data.
-
-Your dot has verified account usage and login persistence after restarting App Server
-in the same cloud configuration. Persistence across scheduled tasks, the first
-owner-authenticated storage write and a scheduled execution remain to be verified.
-No automatic schedule is enabled by this repository.
-
-Response contract: `schemaVersion: 1`, UTC `syncedAt`,
-`days: [{date: "YYYY-MM-DD", tokens: integer}]` and optional lifetime summary.
-The service derives coverage and totals. Dates retain the source's unspecified timezone.
-Missing dates display `0` beside the cell without adding synthetic records or
-changing the reported-day denominator of the average.
+See [TOKEN_USAGE.md](TOKEN_USAGE.md) for authentication, scheduling and failure behavior.
 
 ## Visitor analytics: prepared, disabled
 
