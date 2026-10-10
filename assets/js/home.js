@@ -82,7 +82,7 @@
     const peak = Math.max(...values);
     const stats = document.getElementById('usage-stats');
     stats.replaceChildren();
-    [[compact.format(total), 'Total tokens'], [compact.format(total / days.size), 'Avg / reported day']].forEach(([number, label]) => {
+    [[compact.format(total), 'Total tokens'], [compact.format(total / days.size), 'Avg tokens / day']].forEach(([number, label]) => {
       const item = document.createElement('div');
       const value = document.createElement('strong'); value.textContent = number;
       const caption = document.createElement('span'); caption.textContent = label;
@@ -109,7 +109,8 @@
       button.className = 'usage-day';
       const level = tokens === undefined ? 'missing' : tokens === 0 ? 'zero' : String(Math.min(4, Math.max(1, Math.ceil(tokens / peak * 4))));
       button.dataset.level = level;
-      const message = `${day} · ${millions(tokens ?? 0)}`;
+      const dateLabel = cursor.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+      const message = `${dateLabel} — ${tokens === undefined ? '0' : millions(tokens)}`;
       button.setAttribute('aria-label', message);
       const show = () => showTip(button, message);
       button.addEventListener('mouseenter', show); button.addEventListener('focus', show); button.addEventListener('click', show);

@@ -61,4 +61,4 @@ manual choices locally.
 
 ## Heatmap display
 
-Unreported dates display 0.0M in the cell tooltip as requested. The stored JSON does not invent zero records, and the average still uses reported days only. Tooltips appear next to the focused, tapped or hovered cell.
+Unreported dates display 0 in the cell tooltip as requested. The stored JSON does not invent zero records, and the average still uses reported days only. Tooltips appear next to the focused, tapped or hovered cell.

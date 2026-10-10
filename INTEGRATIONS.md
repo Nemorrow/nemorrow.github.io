@@ -38,7 +38,7 @@ No automatic schedule is enabled by this repository.
 Response contract: `schemaVersion: 1`, UTC `syncedAt`,
 `days: [{date: "YYYY-MM-DD", tokens: integer}]` and optional lifetime summary.
 The service derives coverage and totals. Dates retain the source's unspecified timezone.
-Missing dates display `0.0M` beside the cell without adding synthetic records or
+Missing dates display `0` beside the cell without adding synthetic records or
 changing the reported-day denominator of the average.
 
 ## Visitor analytics: prepared, disabled
