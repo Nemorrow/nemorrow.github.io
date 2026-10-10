@@ -338,26 +338,16 @@ html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e;
 html.quiet-home-page[data-theme="dark"] .theme-sun { display:block; }
 html.quiet-home-page[data-theme="dark"] .theme-moon { display:none; }
 
-/* Stacked service groups with a clear heading, content and metadata hierarchy. */
+/* Quiet, stacked reviewer groups using the page's shared serif typography. */
 .quiet-home-page .academic-service { margin-top:42px; scroll-margin-top:24px; }
 .page.quiet-home-page .page__content .academic-service-heading { margin:0; padding:0 0 16px; border-bottom:1px solid var(--line); }
 .quiet-home-page .service-grid { display:grid; grid-template-columns:minmax(0,1fr); }
-.quiet-home-page .service-group { min-width:0; padding:22px 0; }
+.quiet-home-page .service-group { min-width:0; padding:18px 0; }
 .quiet-home-page .service-group + .service-group { border-top:1px solid var(--line); }
 .quiet-home-page .service-group:last-child { padding-bottom:0; }
-.page.quiet-home-page .page__content .service-subheading { margin:0 0 10px; color:var(--ink); font:400 17px/1.45 Georgia,"Times New Roman",serif; letter-spacing:-.01em; text-transform:none; }
-.quiet-home-page .service-review-list dt { margin:0; color:var(--muted); font:12.5px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-.page.quiet-home-page .page__content .service-main,
-.quiet-home-page .service-review-list dd { margin:0; color:var(--text); font:400 14px/1.75 Georgia,"Times New Roman",serif; }
-.page.quiet-home-page .page__content .service-meta { margin:6px 0 0; color:var(--muted); font:12.5px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-.quiet-home-page .service-meta time { white-space:nowrap; font-variant-numeric:tabular-nums; }
-.quiet-home-page .service-review-list { margin:0; }
-.quiet-home-page .service-review-list > div { display:grid; grid-template-columns:96px minmax(0,1fr); align-items:baseline; column-gap:18px; }
-.quiet-home-page .service-review-list > div + div { margin-top:10px; }
+.page.quiet-home-page .page__content .service-subheading { margin:0 0 8px; color:var(--ink); font:400 17px/1.45 Georgia,"Times New Roman",serif; letter-spacing:-.01em; text-transform:none; }
+.page.quiet-home-page .page__content .service-main { margin:0; color:var(--text); font:400 14px/1.75 Georgia,"Times New Roman",serif; }
 .quiet-home-page .service-more { color:var(--muted); }
 @media(max-width:760px) {
   .quiet-home-page .academic-service { margin-top:34px; }
-  .quiet-home-page .service-group { padding:20px 0; }
-  .quiet-home-page .service-review-list > div { grid-template-columns:1fr; gap:4px; }
-  .quiet-home-page .service-review-list > div + div { margin-top:12px; }
 }
