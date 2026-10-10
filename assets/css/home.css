@@ -329,3 +329,22 @@ html.quiet-home-page[data-theme="dark"] .publication-badge { background:#29382e;
 .quiet-home-page .theme-sun { display:none; }
 html.quiet-home-page[data-theme="dark"] .theme-sun { display:block; }
 html.quiet-home-page[data-theme="dark"] .theme-moon { display:none; }
+
+/* A short entrance, with no scroll-triggered hiding or layout animation. */
+@keyframes home-arrive {
+  from { opacity:0; transform:translateY(6px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@keyframes home-fade { from { opacity:0; } to { opacity:1; } }
+@media (prefers-reduced-motion:no-preference) {
+  body.quiet-home-page #main > .sidebar { animation:home-arrive .42s cubic-bezier(.2,.7,.3,1) both; }
+  body.quiet-home-page #main > .page { animation:home-arrive .48s cubic-bezier(.2,.7,.3,1) .035s both; }
+  .quiet-home-page .publication-citation:not([hidden]) { animation:home-arrive .2s ease-out; }
+  .quiet-home-page .usage-tooltip:not([hidden]) { animation:home-fade .12s ease-out; }
+  .quiet-home-page .theme-toggle { transition:background-color .2s ease,color .2s ease,transform .16s ease; }
+  .quiet-home-page .theme-toggle:active { transform:scale(.94); }
+  .quiet-home-page .theme-toggle svg { animation:home-fade .16s ease-out; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .quiet-home-page *, .quiet-home-page *::before, .quiet-home-page *::after { animation:none !important; transition:none !important; }
+}

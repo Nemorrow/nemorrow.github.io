@@ -20,12 +20,18 @@ Run `python3 scripts/serve_usage.py` from this checkout, or open the supplied
 ## Independent production storage
 
 Production reads https://shiye-token-usage.upbeatpeach9.chatgpt.site/api/token-usage.
-The browser restores its last valid snapshot from local storage immediately, then
-checks the endpoint in the background and every five minutes while visible. On a
-first visit without cached data, loading remains visible until a response arrives.
-Failed refreshes keep the rendered calendar; the bundled JSON is a fallback when
-no valid data has rendered. Browser storage is optional and contains only the same
-public aggregate snapshot.
+Jekyll embeds `_data/token_usage_snapshot.json` into the page so first-time visitors
+can render the calendar without a data request. The browser picks the newer valid
+snapshot between this embedded data and its local cache, then refreshes from the
+endpoint in the background and every five minutes while visible. Failed refreshes
+preserve the visible calendar. Browser storage is optional and contains only public
+aggregate data. The standalone JSON remains a fallback if neither initial snapshot
+is usable.
+
+Update the embedded snapshot alongside normal website releases when desired; it
+does not require scheduled commits. Runtime usage updates still go only to the
+independent service.
+
 This public, CORS-enabled endpoint serves only aggregate daily counts. Its independent
 R2 storage can be updated without commits or deployment of this homepage.
 Before the first authenticated upload, it serves the verified initial snapshot.

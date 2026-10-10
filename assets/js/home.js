@@ -140,10 +140,24 @@
   }
   let signature = '';
   const cacheKey = `homepage-usage-v1:${section.dataset.usageEndpoint || section.dataset.usageUrl}`;
+  const initialSnapshots = [];
+  try {
+    const embedded = JSON.parse(document.getElementById('usage-initial-data').textContent);
+    if (embedded) initialSnapshots.push({ data: embedded, source: 'embedded' });
+  } catch (_) {}
   try {
     const cached = JSON.parse(localStorage.getItem(cacheKey));
-    if (cached) { render(cached); signature = JSON.stringify(cached.days); section.dataset.source = 'cache'; }
-  } catch (_) { /* Storage may be unavailable or contain an invalid old snapshot. */ }
+    if (cached) initialSnapshots.push({ data: cached, source: 'cache' });
+  } catch (_) {}
+  initialSnapshots.sort((a, b) => (Date.parse(b.data.syncedAt) || 0) - (Date.parse(a.data.syncedAt) || 0));
+  for (const snapshot of initialSnapshots) {
+    try {
+      render(snapshot.data);
+      signature = JSON.stringify(snapshot.data.days);
+      section.dataset.source = snapshot.source;
+      break;
+    } catch (_) { /* Try the other snapshot if this one is invalid. */ }
+  }
 
   async function loadUsage() {
     const endpoint = section.dataset.usageEndpoint;
