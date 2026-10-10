@@ -1,12 +1,4 @@
 /* Homepage only: warm paper by day, ink and sage by night. */
-@font-face {
-  font-family:"Shiye Name Kai";
-  src:url("../fonts/shiye-name-kai.woff2") format("woff2");
-  font-style:normal;
-  font-weight:400;
-  font-display:swap;
-  unicode-range:U+53F6,U+8BD7,U+96F7;
-}
 html.quiet-home-page {
   --paper:#f8f7f3; --ink:#252c29; --text:#47504a; --muted:#68736b;
   --line:#dcded5; --accent:#426750; --surface:#efefe8; --zero:#e3e7dd;
@@ -263,10 +255,11 @@ body.quiet-home-page .education-degree h3 { font-weight:500; }
 .quiet-home-page .home-toolbar { justify-content:space-between; border:0; padding:18px 0 0; min-height:48px; }
 .quiet-home-page .home-toolbar .home-name {
   color:var(--ink);
-  font:400 26px/1.3 "Shiye Name Kai","Kaiti SC","STKaiti","KaiTi","楷体",serif;
-  letter-spacing:.1em;
+  display:block;
+  line-height:0;
   text-decoration:none;
 }
+.quiet-home-page .home-name-calligraphy { display:block; width:94px; height:auto; }
 body.quiet-home-page #main { margin-top:34px; }
 body.quiet-home-page .author__avatar { text-align:center; }
 body.quiet-home-page .author__content { text-align:center; }
@@ -277,7 +270,7 @@ body.quiet-home-page .author__bio { white-space:normal; font-family:-apple-syste
 .quiet-home-page .profile-link > svg { width:17px; height:17px; }
 @media (max-width:760px) {
   .quiet-home-page .home-toolbar { padding-top:10px; min-height:40px; }
-  .quiet-home-page .home-toolbar .home-name { font-size:24px; }
+  .quiet-home-page .home-name-calligraphy { width:88px; }
   body.quiet-home-page #main { margin-top:20px; }
   body.quiet-home-page .sidebar > div { display:flex; flex-direction:column; align-items:stretch; gap:0; }
   body.quiet-home-page .author__avatar img { max-width:110px; }

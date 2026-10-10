@@ -20,7 +20,12 @@ layout: compress
 
     {% if page.page_class == 'quiet-home-page' %}
     <div class="home-toolbar">
-      <a class="home-name" href="{{ '/' | relative_url }}" lang="zh-CN">{{ site.author.name_zh }}</a>
+      <a class="home-name" href="{{ '/' | relative_url }}" lang="zh-CN" aria-label="{{ site.author.name_zh }}">
+        <svg class="home-name-calligraphy" viewBox="279 70 1449 598" width="94" height="39" aria-hidden="true" focusable="false">
+          <defs><mask id="home-name-ink" maskUnits="userSpaceOnUse" x="279" y="70" width="1449" height="598" style="mask-type:alpha"><image href="{{ '/assets/images/shiye-name-calligraphy.png' | relative_url }}" x="0" y="0" width="1942" height="809"/></mask></defs>
+          <rect x="279" y="70" width="1449" height="598" fill="currentColor" mask="url(#home-name-ink)"/>
+        </svg>
+      </a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><svg class="theme-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.4 13.2A8.5 8.5 0 0 1 10.8 3.6 8.5 8.5 0 1 0 20.4 13.2Z"/></svg><svg class="theme-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button>
     </div>
     {% endif %}

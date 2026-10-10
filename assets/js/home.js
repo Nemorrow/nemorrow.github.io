@@ -30,12 +30,17 @@
     });
   });
   document.querySelectorAll('.bibtex-copy').forEach(button => {
+    let resetCopyLabel;
     button.addEventListener('click', async () => {
       const panel = button.closest('.publication-citation');
       const status = panel.querySelector('.citation-status');
+      clearTimeout(resetCopyLabel);
+      button.textContent = 'Copy';
+      status.textContent = '';
       try {
         await navigator.clipboard.writeText(panel.querySelector('code').textContent);
-        status.textContent = 'Copied';
+        button.textContent = 'Copied';
+        resetCopyLabel = setTimeout(() => { button.textContent = 'Copy'; }, 2000);
       } catch (_) {
         status.textContent = 'Select the text below to copy.';
       }

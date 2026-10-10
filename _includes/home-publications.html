@@ -22,7 +22,7 @@
           <button type="button" class="bibtex-toggle" aria-expanded="false" aria-controls="bib-{{ paper.citation_id }}">BibTeX</button>
         </div>
         <div class="publication-citation" id="bib-{{ paper.citation_id }}" hidden>
-          <div class="citation-toolbar"><span>BibTeX</span><button type="button" class="bibtex-copy">Copy</button><span class="citation-status" role="status"></span></div>
+          <div class="citation-toolbar"><span>BibTeX</span><button type="button" class="bibtex-copy" aria-live="polite" aria-atomic="true">Copy</button><span class="citation-status" role="status"></span></div>
           <pre><code>{{ paper.bibtex | escape }}</code></pre>
         </div>
     </li>
