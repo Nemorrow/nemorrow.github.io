@@ -1,0 +1,327 @@
+[
+  {
+    "label": "Published",
+    "papers": [
+      {
+        "title": "Stabilizing Off-policy LLM Optimization with Prefix Importance Ratio",
+        "authors": "**Shiye Lei**, Zhihao Cheng, and Dacheng Tao",
+        "venue": "Advances in Neural Information Processing Systems",
+        "badge": "NeurIPS",
+        "year": "2026",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://neurips.cc/virtual/2026/poster/149900"
+          }
+        ],
+        "citation_id": "lei2026stabilizing",
+        "bibtex": "@inproceedings{lei2026stabilizing,\n  title = {{Stabilizing Off-policy LLM Optimization with Prefix Importance Ratio}},\n  author = {Lei, Shiye and Cheng, Zhihao and Tao, Dacheng},\n  year = {2026},\n  booktitle = {Advances in Neural Information Processing Systems}\n}",
+        "citation_sources": [
+          "https://neurips.cc/virtual/2026/poster/149900"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Conference website confirms title, author order and year. Proceedings volume and page range were not located and are intentionally omitted."
+      },
+      {
+        "title": "EAPO: Enhancing Policy Optimization with On-Demand Expert Assistance",
+        "authors": "Siyao Song, Cong Ma, Zhihao Cheng, **Shiye Lei**, Minghao Li, Ying Zeng, Huaixiao Tou, and Kai Jia",
+        "venue": "International Conference on Machine Learning",
+        "badge": "ICML",
+        "year": "2026",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/pdf/2509.23730"
+          }
+        ],
+        "citation_id": "song2026eapo",
+        "bibtex": "@inproceedings{song2026eapo,\n  title = {{EAPO: Enhancing Policy Optimization with On-Demand Expert Assistance}},\n  author = {Song, Siyao and Ma, Cong and Cheng, Zhihao and Lei, Shiye and Li, Minghao and Zeng, Ying and Tou, Huaixiao and Jia, Kai},\n  year = {2026},\n  booktitle = {International Conference on Machine Learning},\n  url = {https://openreview.net/forum?id=luykjYIvEs}\n}",
+        "citation_sources": [
+          "https://icml.cc/virtual/2026/poster/61893",
+          "https://openreview.net/forum?id=luykjYIvEs"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Conference website confirms title, author order and year. Proceedings volume and page range were not located and are intentionally omitted. OpenReview forum supplied by the author; browser verification prevented retrieval of its official BibTeX export."
+      },
+      {
+        "title": "Offline Behavioral Data Selection",
+        "authors": "**Shiye Lei**, Zhihao Cheng, and Dacheng Tao",
+        "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1",
+        "badge": "KDD",
+        "year": "2026",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://dl.acm.org/doi/abs/10.1145/3770854.3780320"
+          },
+          {
+            "label": "Code",
+            "url": "https://github.com/LeavesLei/stepwise_dual_ranking"
+          },
+          {
+            "label": "Poster",
+            "url": "/files/kdd26_poster.pdf"
+          }
+        ],
+        "citation_id": "lei2026offline",
+        "bibtex": "@inproceedings{lei2026offline,\n  title = {{Offline Behavioral Data Selection}},\n  author = {Lei, Shiye and Cheng, Zhihao and Tao, Dacheng},\n  year = {2026},\n  booktitle = {Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1},\n  pages = {612--620},\n  doi = {10.1145/3770854.3780320},\n  url = {https://doi.org/10.1145/3770854.3780320}\n}",
+        "citation_sources": [
+          "https://dl.acm.org/doi/10.1145/3770854.3780320",
+          "https://api.crossref.org/works/10.1145/3770854.3780320"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Publisher-deposited Crossref metadata; year follows the assigned journal issue where available."
+      },
+      {
+        "title": "Image Captions are Natural Prompts for Training Data Synthesis",
+        "authors": "**Shiye Lei\\***, Hao Chen\\*, Sen Zhang, Bo Zhao, and Dacheng Tao",
+        "venue": "International Journal of Computer Vision",
+        "badge": "IJCV",
+        "year": "2025",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://link.springer.com/article/10.1007/s11263-025-02436-0"
+          },
+          {
+            "label": "Code",
+            "url": "https://github.com/LeavesLei/Caption_in_Prompt"
+          }
+        ],
+        "citation_id": "lei2025image",
+        "bibtex": "@article{lei2025image,\n  title = {{Image Captions are Natural Prompts for Training Data Synthesis}},\n  author = {Lei, Shiye and Chen, Hao and Zhang, Sen and Zhao, Bo and Tao, Dacheng},\n  year = {2025},\n  journal = {International Journal of Computer Vision},\n  volume = {133},\n  number = {8},\n  pages = {5435--5454},\n  doi = {10.1007/s11263-025-02436-0},\n  url = {https://doi.org/10.1007/s11263-025-02436-0}\n}",
+        "citation_sources": [
+          "https://link.springer.com/10.1007/s11263-025-02436-0",
+          "https://api.crossref.org/works/10.1007/s11263-025-02436-0"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Publisher-deposited Crossref metadata; year follows the assigned journal issue where available."
+      },
+      {
+        "title": "Attentive Learning Facilitates Generalization of Neural Networks",
+        "authors": "**Shiye Lei**, Fengxiang He, Haowen Chen, and Dacheng Tao",
+        "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+        "badge": "TNNLS",
+        "year": "2025",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://doi.org/10.1109/TNNLS.2024.3356310"
+          },
+          {
+            "label": "Code",
+            "url": "https://github.com/LeavesLei/attentive_learning"
+          }
+        ],
+        "citation_id": "lei2025attentive",
+        "bibtex": "@article{lei2025attentive,\n  title = {{Attentive Learning Facilitates Generalization of Neural Networks}},\n  author = {Lei, Shiye and He, Fengxiang and Chen, Haowen and Tao, Dacheng},\n  year = {2025},\n  journal = {IEEE Transactions on Neural Networks and Learning Systems},\n  volume = {36},\n  number = {2},\n  pages = {3329--3342},\n  doi = {10.1109/tnnls.2024.3356310},\n  url = {https://doi.org/10.1109/tnnls.2024.3356310}\n}",
+        "citation_sources": [
+          "https://ieeexplore.ieee.org/document/10423835/",
+          "https://api.crossref.org/works/10.1109/tnnls.2024.3356310"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Publisher-deposited Crossref metadata; year follows the assigned journal issue where available."
+      },
+      {
+        "title": "Understanding Deep Learning via Decision Boundary",
+        "authors": "**Shiye Lei**, Fengxiang He, Yancheng Yuan, and Dacheng Tao",
+        "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+        "badge": "TNNLS",
+        "year": "2025",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://doi.org/10.1109/TNNLS.2023.3326654"
+          }
+        ],
+        "citation_id": "lei2025understanding",
+        "bibtex": "@article{lei2025understanding,\n  title = {{Understanding Deep Learning via Decision Boundary}},\n  author = {Lei, Shiye and He, Fengxiang and Yuan, Yancheng and Tao, Dacheng},\n  year = {2025},\n  journal = {IEEE Transactions on Neural Networks and Learning Systems},\n  volume = {36},\n  number = {1},\n  pages = {1533--1544},\n  doi = {10.1109/tnnls.2023.3326654},\n  url = {https://doi.org/10.1109/tnnls.2023.3326654}\n}",
+        "citation_sources": [
+          "https://ieeexplore.ieee.org/document/10306309/",
+          "https://api.crossref.org/works/10.1109/tnnls.2023.3326654"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Publisher-deposited Crossref metadata; year follows the assigned journal issue where available."
+      },
+      {
+        "title": "Offline Behavior Distillation",
+        "authors": "**Shiye Lei**, Sen Zhang, and Dacheng Tao",
+        "venue": "Advances in Neural Information Processing Systems",
+        "badge": "NeurIPS",
+        "year": "2024",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://openreview.net/pdf?id=89fSR2gpxp"
+          },
+          {
+            "label": "Code",
+            "url": "https://github.com/LeavesLei/OBD"
+          },
+          {
+            "label": "Poster",
+            "url": "../images/obd_poster.png"
+          }
+        ],
+        "citation_id": "lei2024offline",
+        "bibtex": "@inproceedings{lei2024offline,\n author = {Lei, Shiye and Zhang, Sen and Tao, Dacheng},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/079017-3654},\n editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},\n pages = {115098--115118},\n publisher = {Curran Associates, Inc.},\n title = {Offline Behavior Distillation},\n url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/d0724f5d6108517c3eab35f77f156967-Paper-Conference.pdf},\n volume = {37},\n year = {2024}\n}",
+        "citation_sources": [
+          "https://proceedings.neurips.cc/paper_files/paper/26768-/bibtex"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Official proceedings BibTeX export, with the local citation key retained."
+      },
+      {
+        "title": "A Comprehensive Survey of Dataset Distillation",
+        "authors": "**Shiye Lei** and Dacheng Tao",
+        "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "badge": "TPAMI",
+        "year": "2024",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://doi.org/10.1109/TPAMI.2023.3322540"
+          }
+        ],
+        "citation_id": "lei2024a",
+        "bibtex": "@article{lei2024a,\n  title = {{A Comprehensive Survey of Dataset Distillation}},\n  author = {Lei, Shiye and Tao, Dacheng},\n  year = {2024},\n  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},\n  volume = {46},\n  number = {1},\n  pages = {17--32},\n  doi = {10.1109/tpami.2023.3322540},\n  url = {https://doi.org/10.1109/tpami.2023.3322540}\n}",
+        "citation_sources": [
+          "https://ieeexplore.ieee.org/document/10273632/",
+          "https://api.crossref.org/works/10.1109/tpami.2023.3322540"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Publisher-deposited Crossref metadata; year follows the assigned journal issue where available."
+      },
+      {
+        "title": "Spectral complexity-scaled generalisation bound of complex-valued neural networks",
+        "authors": "Haowen Chen, Fengxiang He, **Shiye Lei**, and Dacheng Tao",
+        "venue": "Artificial Intelligence",
+        "badge": "AIJ",
+        "year": "2023",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://doi.org/10.1016/j.artint.2023.103951"
+          },
+          {
+            "label": "Code",
+            "url": "https://github.com/LeavesLei/cvnn_generalization"
+          }
+        ],
+        "citation_id": "chen2023spectral",
+        "bibtex": "@article{chen2023spectral,\n  title = {{Spectral complexity-scaled generalisation bound of complex-valued neural networks}},\n  author = {Chen, Haowen and He, Fengxiang and Lei, Shiye and Tao, Dacheng},\n  year = {2023},\n  journal = {Artificial Intelligence},\n  volume = {322},\n  pages = {103951},\n  doi = {10.1016/j.artint.2023.103951},\n  url = {https://doi.org/10.1016/j.artint.2023.103951}\n}",
+        "citation_sources": [
+          "https://linkinghub.elsevier.com/retrieve/pii/S0004370223000978",
+          "https://api.crossref.org/works/10.1016/j.artint.2023.103951"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "Publisher-deposited Crossref metadata; year follows the assigned journal issue where available. 103951 is an article number, not a page range."
+      }
+    ]
+  },
+  {
+    "label": "Preprints",
+    "papers": [
+      {
+        "title": "Revisiting LLM Reasoning via Information Bottleneck",
+        "authors": "**Shiye Lei**, Zhihao Cheng, Kai Jia, and Dacheng Tao",
+        "venue": "arXiv preprint",
+        "badge": "Preprint",
+        "year": "2025",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/pdf/2507.18391"
+          }
+        ],
+        "citation_id": "lei2025revisiting",
+        "bibtex": "@misc{lei2025revisiting,\n  title = {{Revisiting LLM Reasoning via Information Bottleneck}},\n  author = {Lei, Shiye and Cheng, Zhihao and Jia, Kai and Tao, Dacheng},\n  year = {2025},\n  eprint = {2507.18391},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2507.18391},\n  url = {https://arxiv.org/abs/2507.18391}\n}",
+        "citation_sources": [
+          "https://arxiv.org/abs/2507.18391"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "arXiv official title, author order and original submission year. No journal/conference volume or pages asserted."
+      },
+      {
+        "title": "EarthSynth: Generating Informative Earth Observation with Diffusion Models",
+        "authors": "Jiancheng Pan\\*, **Shiye Lei\\***, Yuqian Fu, Jiahao Li, Yanxing Liu, Yuze Sun, Xiao He, Long Peng, Xiaomeng Huang, and Bo Zhao",
+        "venue": "arXiv preprint",
+        "badge": "Preprint",
+        "year": "2025",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/pdf/2505.12108"
+          }
+        ],
+        "citation_id": "pan2025earthsynth",
+        "bibtex": "@misc{pan2025earthsynth,\n  title = {{EarthSynth: Generating Informative Earth Observation with Diffusion Models}},\n  author = {Pan, Jiancheng and Lei, Shiye and Fu, Yuqian and Li, Jiahao and Liu, Yanxing and Sun, Yuze and He, Xiao and Peng, Long and Huang, Xiaomeng and Zhao, Bo},\n  year = {2025},\n  eprint = {2505.12108},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2505.12108},\n  url = {https://arxiv.org/abs/2505.12108}\n}",
+        "citation_sources": [
+          "https://arxiv.org/abs/2505.12108"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "arXiv official title, author order and original submission year. No journal/conference volume or pages asserted."
+      },
+      {
+        "title": "State Diversity Matters in Offline Behavior Distillation",
+        "authors": "**Shiye Lei**, Zhihao Cheng, and Dacheng Tao",
+        "venue": "arXiv preprint",
+        "badge": "Preprint",
+        "year": "2025",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/pdf/2512.06692"
+          }
+        ],
+        "citation_id": "lei2025state",
+        "bibtex": "@misc{lei2025state,\n  title = {{State Diversity Matters in Offline Behavior Distillation}},\n  author = {Lei, Shiye and Cheng, Zhihao and Tao, Dacheng},\n  year = {2025},\n  eprint = {2512.06692},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2512.06692},\n  url = {https://arxiv.org/abs/2512.06692}\n}",
+        "citation_sources": [
+          "https://arxiv.org/abs/2512.06692"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "arXiv official title, author order and original submission year. No journal/conference volume or pages asserted."
+      },
+      {
+        "title": "Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer",
+        "authors": "**Shiye Lei**, Zhuozhuo Tu, Leszek Rutkowski, Feng Zhou, Li Shen, Fengxiang He, and Dacheng Tao",
+        "venue": "arXiv preprint",
+        "badge": "Preprint",
+        "year": "2021",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/pdf/2112.06281"
+          }
+        ],
+        "citation_id": "lei2021spatialtemporalfusion",
+        "bibtex": "@misc{lei2021spatialtemporalfusion,\n  title = {{Spatial-Temporal-Fusion BNN: Variational Bayesian Feature Layer}},\n  author = {Lei, Shiye and Tu, Zhuozhuo and Rutkowski, Leszek and Zhou, Feng and Shen, Li and He, Fengxiang and Tao, Dacheng},\n  year = {2021},\n  eprint = {2112.06281},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2112.06281},\n  url = {https://arxiv.org/abs/2112.06281}\n}",
+        "citation_sources": [
+          "https://arxiv.org/abs/2112.06281"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "arXiv official title, author order and original submission year. No journal/conference volume or pages asserted."
+      },
+      {
+        "title": "Neural networks behave as hash encoders: An empirical study",
+        "authors": "Fengxiang He\\*, **Shiye Lei\\***, Jianmin Ji, and Dacheng Tao",
+        "venue": "arXiv preprint",
+        "badge": "Preprint",
+        "year": "2021",
+        "links": [
+          {
+            "label": "Paper",
+            "url": "https://arxiv.org/pdf/2101.05490"
+          }
+        ],
+        "citation_id": "he2021neural",
+        "bibtex": "@misc{he2021neural,\n  title = {{Neural networks behave as hash encoders: An empirical study}},\n  author = {He, Fengxiang and Lei, Shiye and Ji, Jianmin and Tao, Dacheng},\n  year = {2021},\n  eprint = {2101.05490},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2101.05490},\n  url = {https://arxiv.org/abs/2101.05490}\n}",
+        "citation_sources": [
+          "https://arxiv.org/abs/2101.05490"
+        ],
+        "citation_checked_on": "2026-10-10",
+        "citation_note": "arXiv official title, author order and original submission year. No journal/conference volume or pages asserted."
+      }
+    ]
+  }
+]

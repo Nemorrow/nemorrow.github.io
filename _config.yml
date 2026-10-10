@@ -123,6 +123,9 @@ include:
   - _pages
   - files
 exclude:
+  - scripts
+  - TOKEN_USAGE.md
+  - INTEGRATIONS.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -309,3 +312,15 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Optional HTTPS endpoint returning the same schema as assets/data/codex-usage.json.
+# Empty means use the bundled snapshot. Never put an account token here.
+token_usage:
+  endpoint: ""
+
+# Optional analytics. Public site ID only; no API keys. Disabled until configured.
+visitor_analytics:
+  enabled: false
+  script_url: ""
+  website_id: ""
+  domains: "shiyelei.com,nemorrow.github.io"

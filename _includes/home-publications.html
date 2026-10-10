@@ -1,0 +1,32 @@
+<section class="publications-section" aria-labelledby="publications">
+  <div class="publications-heading">
+    <h2 id="publications">Publications</h2>
+    <p class="publications-note">* Co-first authors</p>
+  </div>
+  {% for group in site.data.home_publications %}
+  <h3 class="publications-group">{{ group.label }}</h3>
+  <ul class="publication-list">
+    {% for paper in group.papers %}
+    <li class="publication-item">
+      <div class="publication-meta">
+        <span class="publication-badge{% if group.label == 'Preprints' %} is-preprint{% endif %}">{{ paper.badge }} <time datetime="{{ paper.year }}">{{ paper.year }}</time></span>
+      </div>
+      <div class="publication-body">
+        <div class="publication-title-row">
+          <h4 class="publication-title">{{ paper.title | escape }}</h4>
+        </div>
+        <div class="publication-authors">{{ paper.authors | markdownify }}</div>
+      </div>
+      <div class="publication-links" aria-label="Resources for {{ paper.title | escape }}">
+          {% for link in paper.links %}<a href="{{ link.url | relative_url }}">{{ link.label }}</a>{% endfor %}
+          <button type="button" class="bibtex-toggle" aria-expanded="false" aria-controls="bib-{{ paper.citation_id }}">BibTeX</button>
+        </div>
+        <div class="publication-citation" id="bib-{{ paper.citation_id }}" hidden>
+          <div class="citation-toolbar"><span>BibTeX</span><button type="button" class="bibtex-copy">Copy</button><span class="citation-status" role="status"></span></div>
+          <pre><code>{{ paper.bibtex | escape }}</code></pre>
+        </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>

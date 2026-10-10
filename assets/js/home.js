@@ -1,0 +1,151 @@
+(() => {
+  'use strict';
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const preference = matchMedia('(prefers-color-scheme: dark)');
+  let chosen = false;
+  try { chosen = ['light', 'dark'].includes(localStorage.getItem('homepage-theme')); } catch (_) {}
+  function applyTheme(theme) {
+    root.dataset.theme = theme;
+    toggle.setAttribute('aria-pressed', String(theme === 'dark'));
+    toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    toggle.querySelector('span').textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+  }
+  if (toggle) {
+    applyTheme(root.dataset.theme || (preference.matches ? 'dark' : 'light'));
+    toggle.addEventListener('click', () => {
+      chosen = true;
+      const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      applyTheme(theme);
+      try { localStorage.setItem('homepage-theme', theme); } catch (_) {}
+    });
+    preference.addEventListener('change', event => { if (!chosen) applyTheme(event.matches ? 'dark' : 'light'); });
+  }
+
+  document.querySelectorAll('.bibtex-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = document.getElementById(button.getAttribute('aria-controls'));
+      const expanded = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(expanded));
+      panel.hidden = !expanded;
+    });
+  });
+  document.querySelectorAll('.bibtex-copy').forEach(button => {
+    button.addEventListener('click', async () => {
+      const panel = button.closest('.publication-citation');
+      const status = panel.querySelector('.citation-status');
+      try {
+        await navigator.clipboard.writeText(panel.querySelector('code').textContent);
+        status.textContent = 'Copied';
+      } catch (_) {
+        status.textContent = 'Select the text below to copy.';
+      }
+    });
+  });
+
+  const section = document.querySelector('[data-usage-url]');
+  if (!section) return;
+  const detail = document.getElementById('usage-detail');
+  const millions = value => `${(value / 1000000).toFixed(1)}M`;
+  const compact = new Intl.NumberFormat('en-US', { notation: 'compact', minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const iso = value => value.toISOString().slice(0, 10);
+  function render(data) {
+    if (data.schemaVersion !== 1 || !Array.isArray(data.days) || !data.days.length) throw Error('No daily data');
+    const days = new Map();
+    data.days.forEach(day => {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(day.date) || !Number.isSafeInteger(day.tokens) || day.tokens < 0 || days.has(day.date)) throw Error('Invalid daily data');
+      days.set(day.date, day.tokens);
+    });
+    const dates = [...days.keys()].sort();
+    const end = new Date(dates[dates.length - 1] + 'T00:00:00Z');
+    const start = new Date(end);
+    start.setUTCDate(start.getUTCDate() - 181);
+    start.setUTCDate(start.getUTCDate() - start.getUTCDay());
+    const values = [...days.values()];
+    const total = values.reduce((sum, value) => sum + value, 0);
+    const peak = Math.max(...values);
+    const stats = document.getElementById('usage-stats');
+    stats.replaceChildren();
+    [[compact.format(total), 'Total tokens'], [compact.format(total / days.size), 'Avg / reported day']].forEach(([number, label]) => {
+      const item = document.createElement('div');
+      const value = document.createElement('strong'); value.textContent = number;
+      const caption = document.createElement('span'); caption.textContent = label;
+      item.append(caption, value); stats.append(item);
+    });
+    stats.hidden = false;
+    const calendar = document.getElementById('usage-calendar');
+    calendar.replaceChildren();
+    const months = document.createElement('div'); months.className = 'usage-months';
+    const body = document.createElement('div'); body.className = 'usage-calendar-body';
+    const weekdays = document.createElement('div'); weekdays.className = 'usage-weekdays';
+    ['','Mon','','Wed','','Fri',''].forEach(label => { const span = document.createElement('span'); span.textContent = label; weekdays.append(span); });
+    const grid = document.createElement('div'); grid.className = 'usage-grid';
+    grid.setAttribute('role', 'group'); grid.setAttribute('aria-label', 'Daily token activity. Use arrow keys to explore days.');
+    let week = 0, lastMonth = '', buttons = [];
+    for (let cursor = new Date(start); cursor <= end; cursor.setUTCDate(cursor.getUTCDate() + 1)) {
+      const day = iso(cursor), tokens = days.get(day);
+      if (cursor.getUTCDay() === 0) {
+        const month = cursor.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+        const label = document.createElement('span'); label.textContent = month !== lastMonth ? month : ''; months.append(label); lastMonth = month; week++;
+      }
+      const button = document.createElement('button'); button.type = 'button'; button.tabIndex = -1;
+      button.className = 'usage-day';
+      const level = tokens === undefined ? 'missing' : tokens === 0 ? 'zero' : String(Math.min(4, Math.max(1, Math.ceil(tokens / peak * 4))));
+      button.dataset.level = level;
+      const message = `${day} · ${tokens === undefined ? 'No record returned' : millions(tokens)}`;
+      button.title = message; button.setAttribute('aria-label', message);
+      const show = () => { detail.textContent = message; };
+      button.addEventListener('mouseenter', show); button.addEventListener('focus', show); button.addEventListener('click', show);
+      const index = buttons.length;
+      button.addEventListener('keydown', event => {
+        let next = index;
+        if (event.key === 'ArrowRight') next += 7;
+        else if (event.key === 'ArrowLeft') next -= 7;
+        else if (event.key === 'ArrowDown') next++;
+        else if (event.key === 'ArrowUp') next--;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = buttons.length - 1;
+        else return;
+        event.preventDefault(); next = Math.max(0, Math.min(buttons.length - 1, next));
+        buttons.forEach(b => { b.tabIndex = -1; }); buttons[next].tabIndex = 0; buttons[next].focus();
+      });
+      buttons.push(button); grid.append(button);
+    }
+    buttons[buttons.length - 1].tabIndex = 0;
+    months.style.setProperty('--weeks', week); grid.style.setProperty('--weeks', week);
+    body.append(weekdays, grid); calendar.append(months, body);
+    detail.textContent = '';
+    grid.addEventListener('mouseleave', () => { detail.textContent = ''; });
+    grid.addEventListener('focusout', event => {
+      if (!grid.contains(event.relatedTarget)) detail.textContent = '';
+    });
+    section.dataset.state = 'ready';
+  }
+  let signature = '';
+  async function loadUsage() {
+    const endpoint = section.dataset.usageEndpoint;
+    const urls = [...new Set([endpoint, section.dataset.usageUrl].filter(Boolean))];
+    for (const url of urls) {
+      try {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 8000);
+        let data;
+        try {
+          const response = await fetch(url, {cache: 'no-store', credentials: 'omit', signal: controller.signal});
+          if (!response.ok) throw Error('Usage unavailable');
+          data = await response.json();
+        } finally { clearTimeout(timer); }
+        const nextSignature = JSON.stringify(data.days);
+        if (nextSignature !== signature) { render(data); signature = nextSignature; }
+        section.dataset.source = endpoint && url === endpoint ? 'endpoint' : 'snapshot';
+        return;
+      } catch (_) { /* Try the saved snapshot; preserve a rendered calendar on failure. */ }
+    }
+    if (section.dataset.state !== 'ready') {
+      detail.textContent = 'Token usage is currently unavailable. Please check back later.';
+      section.dataset.state = 'unavailable';
+    }
+  }
+  loadUsage();
+  setInterval(() => { if (!document.hidden) loadUsage(); }, 300000);
+})();

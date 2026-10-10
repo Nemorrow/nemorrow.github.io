@@ -1,0 +1,7 @@
+<section class="usage-section" id="activity" aria-labelledby="usage-title" data-usage-endpoint="{{ site.token_usage.endpoint | default: '' | escape }}" data-usage-url="{{ '/assets/data/codex-usage.json' | relative_url }}">
+  <h2 id="usage-title">Token Usage</h2>
+  <div class="usage-stats" id="usage-stats" hidden></div>
+  <div class="usage-scroll" aria-label="Daily token calendar"><div id="usage-calendar"></div></div>
+  <p id="usage-detail" class="usage-detail" aria-live="polite">Loading token usage…</p>
+  <noscript><p>Enable JavaScript to view the calendar. <a href="{{ '/assets/data/codex-usage.json' | relative_url }}">Usage data</a>.</p></noscript>
+</section>

@@ -1,0 +1,11 @@
+<section class="home-education" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education</h2>
+  <ol>
+    {% for item in site.data.education %}
+    <li>
+      <div class="education-degree"><h3>{{ item.degree }}</h3><time datetime="{{ item.year }}">{{ item.year }}</time></div>
+      <a class="education-school" href="{{ item.url }}">{{ item.institution }}</a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

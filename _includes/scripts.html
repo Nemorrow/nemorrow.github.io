@@ -1,4 +1,6 @@
+{% unless page.page_class == 'quiet-home-page' %}
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+{% endunless %}
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
