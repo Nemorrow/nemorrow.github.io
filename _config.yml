@@ -81,6 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Shiye Lei"
+  name_zh          : "雷诗叶"
   avatar           : "profile4.jpg"
   bio              : "Researcher @ ByteDance"
   location         : "Beijing, CN"

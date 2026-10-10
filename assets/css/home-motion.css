@@ -1,0 +1,122 @@
+/* Animate individual sections; the sticky sidebar and page layout stay still. */
+body.quiet-home-page #main,
+body.quiet-home-page .page,
+body.quiet-home-page .page__inner-wrap,
+body.quiet-home-page .page__hero,
+body.quiet-home-page .sidebar,
+body.quiet-home-page .sidebar > [itemscope] {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes home-section-reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(var(--home-reveal-x, 0), var(--home-reveal-y, 12px), 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes home-detail-reveal {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes home-soft-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .quiet-home-page .home-name,
+  .quiet-home-page div.author__avatar,
+  .quiet-home-page .author__content,
+  .quiet-home-page .home-education,
+  .quiet-home-page .home-contact,
+  .quiet-home-page .page__content > p,
+  .quiet-home-page .usage-section,
+  .quiet-home-page .publications-heading,
+  .quiet-home-page .publications-group,
+  .quiet-home-page .publication-item {
+    animation: home-section-reveal 640ms cubic-bezier(.18, .72, .25, 1)
+      var(--home-reveal-delay, 0ms) both;
+  }
+
+  .quiet-home-page .home-name {
+    --home-reveal-x: -6px;
+    --home-reveal-y: 0px;
+    animation-duration: 480ms;
+  }
+
+  .quiet-home-page div.author__avatar,
+  .quiet-home-page .author__content,
+  .quiet-home-page .home-education,
+  .quiet-home-page .home-contact {
+    --home-reveal-x: -10px;
+    --home-reveal-y: 4px;
+  }
+
+  .quiet-home-page div.author__avatar { --home-reveal-delay: 30ms; }
+  .quiet-home-page .author__content { --home-reveal-delay: 70ms; }
+  .quiet-home-page .home-education { --home-reveal-delay: 110ms; }
+  .quiet-home-page .home-contact { --home-reveal-delay: 150ms; }
+  .quiet-home-page .page__content > p:first-of-type { --home-reveal-delay: 55ms; }
+  .quiet-home-page .page__content > p:nth-of-type(2) { --home-reveal-delay: 100ms; }
+  .quiet-home-page .usage-section { --home-reveal-delay: 145ms; }
+  .quiet-home-page .publications-heading { --home-reveal-delay: 185ms; }
+  .quiet-home-page .publications-group { --home-reveal-delay: 205ms; }
+  .quiet-home-page .publication-item { --home-reveal-delay: 225ms; }
+
+  /* Unanimated content is visible; observation never adds a hidden state. */
+  body.quiet-home-page .home-motion-scroll:not(.home-motion-visible) {
+    animation: none;
+  }
+
+  body.quiet-home-page .home-motion-scroll.home-motion-visible {
+    animation: home-section-reveal 620ms cubic-bezier(.18, .72, .25, 1)
+      var(--home-scroll-delay, 0ms) both;
+  }
+
+  body.quiet-home-page .home-motion-static {
+    animation: none;
+  }
+
+  .quiet-home-page .publication-citation:not([hidden]) {
+    animation: home-detail-reveal 180ms ease-out;
+  }
+
+  .quiet-home-page .usage-tooltip:not([hidden]) {
+    animation: home-soft-fade 100ms ease-out;
+  }
+
+  .quiet-home-page .theme-toggle {
+    transition: background-color 200ms ease, color 200ms ease, transform 160ms ease;
+  }
+
+  .quiet-home-page .theme-toggle:active { transform: scale(.94); }
+  .quiet-home-page .theme-toggle svg { animation: home-soft-fade 160ms ease-out; }
+}
+
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+  .quiet-home-page div.author__avatar,
+  .quiet-home-page .author__content,
+  .quiet-home-page .home-education,
+  .quiet-home-page .home-contact {
+    --home-reveal-x: 0px;
+    --home-reveal-y: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.quiet-home-page { scroll-behavior: auto; }
+  .quiet-home-page *,
+  .quiet-home-page *::before,
+  .quiet-home-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
