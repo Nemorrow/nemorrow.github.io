@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # Umami is configured below; avoid duplicate tracking.
   google:
     tracking_id          :
 
@@ -319,9 +319,10 @@ compress_html:
 token_usage:
   endpoint: ""
 
-# Optional analytics. Public site ID only; no API keys. Disabled until configured.
+# Private Umami Cloud dashboard. Only the public tracking ID belongs in the repo.
+# Do not enable Share URLs or embed the analytics dashboard on the homepage.
 visitor_analytics:
-  enabled: false
-  script_url: ""
-  website_id: ""
-  domains: "shiyelei.com,nemorrow.github.io"
+  enabled: true
+  script_url: "https://cloud.umami.is/script.js"
+  website_id: "2557fd9a-808e-454e-9f0b-b13bae99e5db"
+  domains: "shiyelei.com,www.shiyelei.com,nemorrow.github.io"
