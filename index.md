@@ -6,9 +6,6 @@ author_profile: true
 page_class: quiet-home-page
 masthead: false
 footer: false
-redirect_from:
-  - /about/
-  - /about.html
 ---
 
 I am an LLM researcher at [BandAI, Bytedance](https://bytedancebandai.notion.site/intro). I received my PhD and MPhil in Computer Science from the [University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) in 2026 and 2022, advised by [Prof. Dacheng Tao](https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en). Prior to that, I received a BEng from the [School of Automation Science and Electrical Engineering, Beihang University](https://asee.buaa.edu.cn/) in 2019. 

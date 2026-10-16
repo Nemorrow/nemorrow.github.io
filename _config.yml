@@ -121,9 +121,22 @@ author:
 # Reading Files
 include:
   - .htaccess
-  - _pages
   - files
 exclude:
+  # Only index.md and 404.md are public pages. Keep retired sources in the
+  # repository without generating their old website URLs.
+  - _pages
+  # Retired template content must not become public routes or static downloads.
+  - _posts
+  - _portfolio
+  - _publications
+  - _talks
+  - _teaching
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - markdown_generator
+  - CONTRIBUTING.md
   - scripts
   - TOKEN_USAGE.md
   - INTEGRATIONS.md
