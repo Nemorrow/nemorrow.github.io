@@ -6,6 +6,36 @@ author_profile: true
 page_class: quiet-home-page
 masthead: false
 footer: false
+redirect_from:
+  - /publications/
+  - /cv/
+  - /resume/
+  - /about/
+  - /about.html
+  - /talks/
+  - /teaching/
+  - /portfolio/
+  - /talkmap.html
+  - /talkmap/map.html
+  - /archive-layout-with-content/
+  - /categories/
+  - /collection-archive/
+  - /markdown/
+  - /markdown.html
+  - /md/
+  - /non-menu-page/
+  - /nmp/
+  - /nmp.html
+  - /page-archive/
+  - /sitemap/
+  - /tags/
+  - /terms/
+  - /year-archive/
+  - /wordpress/blog-posts/
+  - /posts/2012/08/blog-post-1/
+  - /posts/2012/08/blog-post-4/
+  - /posts/2013/08/blog-post-2/
+  - /posts/2014/08/blog-post-3/
 ---
 
 I am an LLM researcher at [BandAI, Bytedance](https://bytedancebandai.notion.site/intro). I received my PhD and MPhil in Computer Science from the [University of Sydney](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) in 2026 and 2022, advised by [Prof. Dacheng Tao](https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en). Prior to that, I received a BEng from the [School of Automation Science and Electrical Engineering, Beihang University](https://asee.buaa.edu.cn/) in 2019. 

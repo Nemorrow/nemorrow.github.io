@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="{{ page.redirect.to | escape }}">
+    <title>Shiye Lei</title>
+    <script>window.location.replace({{ page.redirect.to | jsonify }});</script>
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to | escape }}">
+  </head>
+  <body>
+    <noscript><p><a href="{{ page.redirect.to | escape }}">Go to homepage</a></p></noscript>
+  </body>
+</html>

@@ -285,6 +285,7 @@ plugins:
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
+  - jekyll-redirect-from
   #- jekyll-sitemap
   #- jekyll-gist
   #- jekyll-feed
