@@ -66,7 +66,9 @@
   window.addEventListener('scroll', hideTip, true); window.addEventListener('resize', hideTip);
   document.addEventListener('keydown', event => { if (event.key === 'Escape') hideTip(); });
   document.addEventListener('pointerdown', event => { if (!event.target.closest('.usage-day')) hideTip(); });
-  const millions = value => `${(value / 1000000).toFixed(1)}M`;
+  const dailyTokens = value => value >= 1000000000
+    ? `${(value / 1000000000).toFixed(1)}B`
+    : `${(value / 1000000).toFixed(1)}M`;
   const compact = new Intl.NumberFormat('en-US', { notation: 'compact', minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const iso = value => value.toISOString().slice(0, 10);
   function render(data) {
@@ -114,7 +116,7 @@
       const level = tokens === undefined ? 'missing' : tokens === 0 ? 'zero' : String(Math.min(4, Math.max(1, Math.ceil(tokens / peak * 4))));
       button.dataset.level = level;
       const dateLabel = cursor.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
-      const message = `${dateLabel} — ${tokens === undefined ? '0' : millions(tokens)}`;
+      const message = `${dateLabel} — ${tokens === undefined ? '0' : dailyTokens(tokens)}`;
       button.setAttribute('aria-label', message);
       const show = () => showTip(button, message);
       button.addEventListener('mouseenter', show); button.addEventListener('focus', show); button.addEventListener('click', show);
