@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-10-30T04:04:06Z",
+  "syncedAt": "2026-10-30T10:05:47Z",
   "source": {
     "method": "account/usage/read",
     "scope": "account-wide",
@@ -16,10 +16,10 @@
     "unreportedDaysInRange": 35
   },
   "summary": {
-    "reportedTokens": 22891508311,
-    "lifetimeTokens": 22891508311,
+    "reportedTokens": 21621485751,
+    "lifetimeTokens": 21621485751,
     "dailySumMatchesLifetime": true,
-    "peakReportedDailyTokens": 1196708888
+    "peakReportedDailyTokens": 1063828977
   },
   "days": [
     {
@@ -584,123 +584,123 @@
     },
     {
       "date": "2026-09-30",
-      "tokens": 299865205
+      "tokens": 168098285
     },
     {
       "date": "2026-10-01",
-      "tokens": 38064815
+      "tokens": 21669923
     },
     {
       "date": "2026-10-02",
-      "tokens": 67148918
+      "tokens": 31264951
     },
     {
       "date": "2026-10-03",
-      "tokens": 137138762
+      "tokens": 72371099
     },
     {
       "date": "2026-10-04",
-      "tokens": 100741861
+      "tokens": 51196921
     },
     {
       "date": "2026-10-05",
-      "tokens": 93294263
+      "tokens": 50569222
     },
     {
       "date": "2026-10-06",
-      "tokens": 49183997
+      "tokens": 39782490
     },
     {
       "date": "2026-10-07",
-      "tokens": 25895354
+      "tokens": 11481084
     },
     {
       "date": "2026-10-08",
-      "tokens": 285355721
+      "tokens": 266729741
     },
     {
       "date": "2026-10-09",
-      "tokens": 180657795
+      "tokens": 168011008
     },
     {
       "date": "2026-10-10",
-      "tokens": 422051741
+      "tokens": 365509633
     },
     {
       "date": "2026-10-11",
-      "tokens": 24863665
+      "tokens": 6546284
     },
     {
       "date": "2026-10-12",
-      "tokens": 317439521
+      "tokens": 296948067
     },
     {
       "date": "2026-10-13",
-      "tokens": 167699756
+      "tokens": 124330649
     },
     {
       "date": "2026-10-14",
-      "tokens": 150752358
+      "tokens": 81163301
     },
     {
       "date": "2026-10-15",
-      "tokens": 257226202
+      "tokens": 168107965
     },
     {
       "date": "2026-10-16",
-      "tokens": 321552735
+      "tokens": 195999995
     },
     {
       "date": "2026-10-17",
-      "tokens": 49211602
+      "tokens": 16273135
     },
     {
       "date": "2026-10-18",
-      "tokens": 98082724
+      "tokens": 34143968
     },
     {
       "date": "2026-10-19",
-      "tokens": 219176429
+      "tokens": 171705001
     },
     {
       "date": "2026-10-20",
-      "tokens": 134533166
+      "tokens": 97703769
     },
     {
       "date": "2026-10-21",
-      "tokens": 94496879
+      "tokens": 58823210
     },
     {
       "date": "2026-10-22",
-      "tokens": 67874797
+      "tokens": 44658097
     },
     {
       "date": "2026-10-23",
-      "tokens": 131488076
+      "tokens": 116666456
     },
     {
       "date": "2026-10-24",
-      "tokens": 182650212
+      "tokens": 171011499
     },
     {
       "date": "2026-10-25",
-      "tokens": 22455943
+      "tokens": 9105756
     },
     {
       "date": "2026-10-26",
-      "tokens": 406177940
+      "tokens": 393763350
     },
     {
       "date": "2026-10-27",
-      "tokens": 486183715
+      "tokens": 474001145
     },
     {
       "date": "2026-10-28",
-      "tokens": 369973370
+      "tokens": 356458869
     },
     {
       "date": "2026-10-29",
-      "tokens": 1196708888
+      "tokens": 1063828977
     }
   ]
 }
