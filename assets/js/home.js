@@ -69,6 +69,19 @@
   const dailyTokens = value => value >= 1000000000
     ? `${(value / 1000000000).toFixed(1)}B`
     : `${(value / 1000000).toFixed(1)}M`;
+  function createActivityScale(values) {
+    // Keep an exceptional peak from flattening the rest of the visible calendar.
+    const positive = values.filter(value => value > 0).sort((a, b) => a - b);
+    const uniform = !positive.length || positive[0] === positive[positive.length - 1];
+    const thresholds = uniform ? [] : [0.2, 0.4, 0.6, 0.8].map(quantile =>
+      positive[Math.ceil(positive.length * quantile) - 1]);
+    return value => {
+      if (value === undefined) return 'missing';
+      if (value === 0) return 'zero';
+      if (uniform) return '3';
+      return String(1 + thresholds.filter(threshold => value > threshold).length);
+    };
+  }
   const compact = new Intl.NumberFormat('en-US', { notation: 'compact', minimumFractionDigits: 1, maximumFractionDigits: 1 });
   const iso = value => value.toISOString().slice(0, 10);
   function render(data) {
@@ -85,7 +98,9 @@
     start.setUTCDate(start.getUTCDate() - start.getUTCDay());
     const values = [...days.values()];
     const total = values.reduce((sum, value) => sum + value, 0);
-    const peak = Math.max(...values);
+    const firstVisibleDay = iso(start);
+    const activityLevel = createActivityScale(data.days
+      .filter(day => day.date >= firstVisibleDay).map(day => day.tokens));
     const stats = document.getElementById('usage-stats');
     stats.replaceChildren();
     [[compact.format(total), 'Total tokens'], [compact.format(total / days.size), 'Avg tokens / day']].forEach(([number, label]) => {
@@ -113,8 +128,7 @@
       }
       const button = document.createElement('button'); button.type = 'button'; button.tabIndex = -1;
       button.className = 'usage-day';
-      const level = tokens === undefined ? 'missing' : tokens === 0 ? 'zero' : String(Math.min(4, Math.max(1, Math.ceil(tokens / peak * 4))));
-      button.dataset.level = level;
+      button.dataset.level = activityLevel(tokens);
       const dateLabel = cursor.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
       const message = `${dateLabel} — ${tokens === undefined ? '0' : dailyTokens(tokens)}`;
       button.setAttribute('aria-label', message);
