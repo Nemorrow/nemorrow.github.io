@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "syncedAt": "2026-11-13T02:58:00.531290Z",
+  "syncedAt": "2026-11-13T09:13:34.660477Z",
   "source": {
     "method": "account/usage/read",
     "scope": "account-wide",
@@ -16,8 +16,8 @@
     "unreportedDaysInRange": 35
   },
   "summary": {
-    "reportedTokens": 27090129316,
-    "lifetimeTokens": 27090129316,
+    "reportedTokens": 27131312580,
+    "lifetimeTokens": 27131312580,
     "dailySumMatchesLifetime": true,
     "peakReportedDailyTokens": 1337352065
   },
@@ -756,7 +756,7 @@
     },
     {
       "date": "2026-11-12",
-      "tokens": 656872397
+      "tokens": 698055661
     }
   ]
 }
