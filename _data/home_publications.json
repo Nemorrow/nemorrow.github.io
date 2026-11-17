@@ -11,7 +11,7 @@
         "links": [
           {
             "label": "Paper",
-            "url": "https://neurips.cc/virtual/2026/poster/149900"
+            "url": "https://arxiv.org/pdf/2601.22718"
           }
         ],
         "citation_id": "lei2026stabilizing",
@@ -31,7 +31,7 @@
         "links": [
           {
             "label": "Paper",
-            "url": "https://openreview.net/forum?id=luykjYIvEs"
+            "url": "https://openreview.net/pdf?id=luykjYIvEs"
           }
         ],
         "citation_id": "song2026eapo",
