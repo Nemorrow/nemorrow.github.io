@@ -12,6 +12,10 @@
           {
             "label": "Paper",
             "url": "https://arxiv.org/pdf/2601.22718"
+          },
+          {
+            "label": "Poster",
+            "url": "/files/minpro_poster_neurips26.pdf"
           }
         ],
         "citation_id": "lei2026stabilizing",
